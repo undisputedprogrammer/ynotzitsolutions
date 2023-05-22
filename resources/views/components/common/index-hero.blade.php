@@ -34,9 +34,9 @@
   </h1>
 </div>
 
-<div class="  absolute bottom-[25%] sm:bottom-[32%] lg:bottom-[15%] xl:bottom-[22%] left-0 lg:left-[11%] w-[70%]">
+<div class="  absolute bottom-[20%] sm:bottom-[32%] md:bottom-[25%] lg:bottom-[13%] xl:bottom-[16%] 2xl:bottom-[22%] left-0 lg:left-[11%] w-[80%] lg:w-[70%]">
     <div data-aos="fade-up"
-    data-aos-anchor-placement="bottom-bottom" class=" flex w-[80%] sm:w-[50%] xl:w-[35%] justify-evenly lg:justify-start lg:space-x-4 mx-auto lg:mx-0">
+    data-aos-anchor-placement="bottom-bottom" class=" flex w-[100%] sm:w-[60%] xl:w-[35%] justify-evenly lg:justify-start lg:space-x-4 mx-auto lg:mx-0">
         <a class=" flex text-white font-myriadpro border-2 border-white rounded-3xl px-4 py-1 xl:text-lg" href="">Contact Us
             <img class=" w-7 ml-2" src="{{asset('images/icons/Arrow1.svg')}}" alt="">
         </a>
