@@ -1,6 +1,50 @@
 {
+  "public/fonts/ARIALN.TTF": {
+    "file": "assets/ARIALN-62e15117.TTF",
+    "src": "public/fonts/ARIALN.TTF"
+  },
+  "public/fonts/MYRIADPRO-REGULAR.woff": {
+    "file": "assets/MYRIADPRO-REGULAR-19b0448c.woff",
+    "src": "public/fonts/MYRIADPRO-REGULAR.woff"
+  },
+  "public/fonts/Montserrat-Bold.ttf": {
+    "file": "assets/Montserrat-Bold-06a0e623.ttf",
+    "src": "public/fonts/Montserrat-Bold.ttf"
+  },
+  "public/fonts/Montserrat-ExtraLight.ttf": {
+    "file": "assets/Montserrat-ExtraLight-8e07a92d.ttf",
+    "src": "public/fonts/Montserrat-ExtraLight.ttf"
+  },
+  "public/fonts/Montserrat-Medium.ttf": {
+    "file": "assets/Montserrat-Medium-9692eb36.ttf",
+    "src": "public/fonts/Montserrat-Medium.ttf"
+  },
+  "public/fonts/Montserrat-Regular.ttf": {
+    "file": "assets/Montserrat-Regular-34169f8b.ttf",
+    "src": "public/fonts/Montserrat-Regular.ttf"
+  },
+  "public/fonts/Montserrat-SemiBold.ttf": {
+    "file": "assets/Montserrat-SemiBold-f09b4b7b.ttf",
+    "src": "public/fonts/Montserrat-SemiBold.ttf"
+  },
+  "public/fonts/SansSerifBldFLFCond.otf": {
+    "file": "assets/SansSerifBldFLFCond-3cdb627a.otf",
+    "src": "public/fonts/SansSerifBldFLFCond.otf"
+  },
+  "public/fonts/arial-bold.ttf": {
+    "file": "assets/arial-bold-c2a7bcbc.ttf",
+    "src": "public/fonts/arial-bold.ttf"
+  },
+  "public/fonts/swiss_721_black_outline_bt.ttf": {
+    "file": "assets/swiss_721_black_outline_bt-134c48d0.ttf",
+    "src": "public/fonts/swiss_721_black_outline_bt.ttf"
+  },
+  "public/images/icons/Q.webp": {
+    "file": "assets/Q-e9e29938.webp",
+    "src": "public/images/icons/Q.webp"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-be178382.css",
+    "file": "assets/app-8b5b4940.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
