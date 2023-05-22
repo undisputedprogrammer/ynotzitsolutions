@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family:"font-arial-bold";
+
+    src: url("../../public/fonts/arial-bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"font-arial-narrow";
+
+    src: url("../../public/fonts/ARIALN.TTF") format("truetype");
+  }
+
+  @font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
+  }
+
+  @font-face {
+    font-family:"font-myriad-regular";
+
+    src: url("../../public/fonts/MYRIADPRO-REGULAR.woff") format("truetype");
+  }
+
+  @font-face {
+    font-family:"font-swiss";
+
+    src: url("../../public/fonts/swiss_721_black_outline_bt.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"font-gothoic-bold";
+
+    src: url("../../public/fonts/SansSerifBldFLFCond.otf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-regular";
+
+    src: url("../../public/fonts/Montserrat-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-semibold";
+
+    src: url("../../public/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-light";
+
+    src: url("../../public/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family:"montserrat-medium";
+
+    src: url("../../public/fonts/Montserrat-Medium.ttf") format("truetype");
+  }
+
+
+  @font-face {
+    font-family:"montserrat-bold";
+
+    src: url("../../public/fonts/Montserrat-Bold.ttf") format("truetype");
+  }
+
+
+
+
+
