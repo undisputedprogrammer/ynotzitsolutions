@@ -6,7 +6,7 @@
         </p>
 
         <div class=" md:flex md:mt-4 md:items-center xl:w-[88%] xl:mx-auto">
-        <img class="w-full mt-3 xl:basis-[50%]" src="{{asset('images/services/webdev.png')}}" alt="">
+        <img class="w-full mt-3 xl:basis-[50%]" src="{{asset('images/services/web-dev.webp')}}" alt="">
 
         <div class=" md:order-first md:basis-[60%]  ">
             <h3 class=" text-lg font-montsemibold xl:text-3xl xl:mb-5">We are specialised in</h3>

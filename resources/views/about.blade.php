@@ -25,7 +25,7 @@ $isblog=false;
 <x-desktop.nav :ishome="$ishome" :isabout="$isabout" :isservices="$isservices" :iscontact="$iscontact"  :isblog="$isblog" class="font-satoshimedium text-[14px] mr-14"></x-desktop.nav>
 {{-- desktop-navbar ends --}}
 @php
-   $hero = array('img' => "/images/about/about.png", 'title'=>"We not only design products, We design Dreams" );
+   $hero = array('img' => "/images/about/about2.webp", 'title'=>"We not only design products, We design Dreams" );
    $height="h-[180px]";
    $data = array('title' => "ABOUT US", 'desc'=>"Having known as a website development company in the initial stages, Webandcrafts have now blossomed into a global IT solution provider.
 Today, we create custom made mobility solutions, web and mobile applications and dynamic digital marketing strategies for our customers

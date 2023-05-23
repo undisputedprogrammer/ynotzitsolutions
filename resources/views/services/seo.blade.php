@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/seo.jpg");
+    $hero = array('img' => "/images/services/seo.webp");
     $height="h-[180px]";
     $data = array('title' => "Search Engine Optimisation", 'desc'=>"SEO, which stands for Search Engine Optimization, is the practice of optimizing websites and online content to improve their visibility and ranking in search engine results pages (SERPs). SEO plays a crucial role in digital marketing strategies for businesses.  Staying up-to-date with the ever-evolving SEO landscape, including algorithm changes and industry trends, is crucial for businesses to maintain their online visibility and drive sustainable organic traffic to their websites.
 

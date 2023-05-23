@@ -16,32 +16,32 @@ $service6 = array('img' => "/images/icons/Social Media Management.webp",'title'=
 
 <div class=" my-7 flex flex-wrap w-[90%] xl:w-[80%] mx-auto justify-between">
 
-    <div data-aos="fade-up-right" class=" w-[28%]">
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[28%]">
         <a href="/services/webDevelopment">
             <x-common.service-card :service="$service1"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-right" class=" w-[28%]">
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[28%]">
         <a href="/services/mobileApp">
             <x-common.service-card :service="$service2"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-right" class=" w-[28%]">
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[28%]">
         <a href="/services/digitalMarketing">
             <x-common.service-card :service="$service3"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-left" class=" w-[28%]">
+    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[28%]">
         <a href="/services/SEO">
             <x-common.service-card :service="$service4"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-left" class=" w-[28%]">
+    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[28%]">
         <a href="/services/onlineAdvertisements">
             <x-common.service-card :service="$service5"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-left" class=" w-[28%]">
+    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[28%]">
         <a href="/services/socialMediaManagement">
             <x-common.service-card :service="$service6"></x-common.service-card>
         </a>

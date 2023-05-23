@@ -1,5 +1,5 @@
 @props(['img','title','description','url'])
-<div data-aos="zoom-in-down" class=" w-[46%] lg:w-[23%] flex flex-col items-center mb-5 lg:mb-8">
+<div data-aos="zoom-in-down" data-aos-duration="800" class=" w-[46%] lg:w-[23%] flex flex-col items-center mb-5 lg:mb-8">
     <img class="w-[60%] mx-auto" src="{{$img}}" alt="">
     <h3 class=" text-center text-dark-blue font-montregular lg:text-xl lg:h-[56px] lg:flex lg:items-center">{{$title}}</h3>
     <p class=" text-[10px] text-center text-dark-gray font-montmedium font-medium line-clamp-3 lg:text-base lg:flex lg:mt-2 lg:h-[72px] ">{{$description}}</p>

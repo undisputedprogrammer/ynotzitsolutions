@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/logo design page-02.png");
+    $hero = array('img' => "/images/services/logo design page-02.webp");
     $height="h-[180px]";
     $data = array('title' => "Logo Design", 'desc'=>"It is the process of creating a visual representation that represents a brand, company, product, or service. A logo is a key element of a brand's visual identity and serves as a symbol that helps customers recognize and remember the brand.
  A well-designed logo is an important asset for a brand, creating a strong visual identity and helping to establish recognition and recall in the minds of customers.

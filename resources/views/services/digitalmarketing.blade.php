@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/digitalmarketing.jpg");
+    $hero = array('img' => "/images/services/image 6-02.webp");
     $height="h-[180px]";
     $data = array('title' => "Digital Marketing", 'desc'=>"Digital marketing provides businesses with a cost-effective and measurable way to reach their target audience, increase brand awareness, drive website traffic, generate leads, and ultimately boost sales. It allows for targeted marketing campaigns and provides valuable insights for continuous improvement. Businesses need to adapt and stay updated with the latest digital marketing trends and strategies to stay competitive in the digital landscape.
 

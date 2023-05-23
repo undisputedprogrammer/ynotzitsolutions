@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/mobile2.png", 'title'=>"Mobile Application Development" );
+    $hero = array('img' => "/images/services/mobile-app.webp", 'title'=>"Mobile Application Development" );
     $height="h-[180px]";
     $data = array('title' => "Let your business grow with us", 'desc'=>"Mobile applications have become an integral part of modern business strategies. They offer numerous benefits and opportunities for businesses to connect with their customers, enhance productivity, and improve overall efficiency.
 It's important for businesses to carefully plan and strategize their mobile app development to align with their specific goals and target audience. A well-designed and user-friendly mobile application can significantly contribute to business growth, customer satisfaction, and operational efficiency.
@@ -36,7 +36,7 @@ It's important for businesses to carefully plan and strategize their mobile app 
 " );
     $listhead="Why should you choose us ?";
     $lists=['Quality oriented work force', 'In depth knowledge of frameworks and mobile technologies','On- demand capacity to meet tight deadlines','Timely delivery and cost effective service', 'Customer centric procedures'];
-    $img="/images/services/Mobile Application Development-02.png";
+    $img="/images/services/Mobile-Application-Development-02.webp";
 @endphp
 
 <x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>

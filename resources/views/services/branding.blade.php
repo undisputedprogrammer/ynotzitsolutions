@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/BRANDING-02.png");
+    $hero = array('img' => "/images/services/BRANDING-02.webp");
     $height="h-[180px]";
     $data = array('title' => "Branding", 'desc'=>"Branding in business refers to the process of creating and cultivating a distinct identity, image, and perception of a company, product, or service in the minds of customers and stakeholders. It encompasses various elements, including a company's name, logo, tagline, visual design, messaging, values, and overall customer experience.
 

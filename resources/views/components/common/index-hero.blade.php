@@ -1,16 +1,17 @@
 <div class=" w-[95%]  mx-auto relative  ">
 {{-- <img src="{{asset('images/home/IMAGE1.webp')}}" alt=""> --}}
 {{-- <img class=" object-cover" src="{{asset('images/home/homebg.jpg')}}" alt=""> --}}
-<img class=" lg:hidden" src="{{asset('images/home/bg-mob.jpg')}}" alt="">
-<img class=" hidden lg:flex" src="{{asset('images/home/homebg.jpg')}}" alt="">
-<img class="lg:hidden absolute top-0 left-0" src="{{asset('images/home/template-mobile.png')}}" alt="">
-<img class=" absolute top-0 left-0 xl:left-[-3px] hidden lg:flex w-full" src="{{asset('images/home/template3.png')}}" alt="">
+<img class=" lg:hidden" src="{{asset('images/home/bg-mob.webp')}}" alt="">
+<img class=" hidden lg:flex" src="{{asset('images/home/homebg.webp')}}" alt="">
+<img class="lg:hidden absolute top-0 left-0" src="{{asset('images/home/template-mobile.webp')}}" alt="">
+<img class=" absolute top-0 left-0 xl:left-[-3px] hidden lg:flex w-full" src="{{asset('images/home/template3.webp')}}" alt="">
 <div class=" absolute top-[34%] sm:top-[38%] lg:top-[30%] left-[11%]">
     <h3 class=" font-myriadpro text-xl sm:text-2xl text-gray-300">WELCOME</h3>
 
 <h1 class=" font-swiss text-[1.7rem] sm:text-[2rem] xl:text-[2.5rem] text-white mt-4">Digital creating trends</h1>
 
-<h1 class=" text-white font-myriadpro bold text-4xl sm:text-5xl xl:text-7xl mt-2">Lead the <span class=" text-dark-blue">Changes</span></h1>
+<h1 class=" text-white font-myriadpro bold text-4xl sm:text-5xl xl:text-7xl mt-2 text pb-1">Lead the <span class=" text-dark-blue">Changes</span></h1>
+
 {{-- <p class=" font-myriadpro text-white text-xs sm:text-sm mt-6 lh-sm xl:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis at, quas ab beatae fugit recusandae laudantium reprehenderit molestiae ea porro sed sit </p> --}}
 <h1 class="h1 font-myriadpro text-white text-xs sm:text-sm mt-6 lh-sm xl:text-lg">
     <span class="span">There</span>

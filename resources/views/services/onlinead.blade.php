@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/onlineads.png");
+    $hero = array('img' => "/images/services/image 8-02.webp");
     $height="h-[180px]";
     $data = array('title' => "Online Advertisements", 'desc'=>"Online advertising, also known as digital advertising, is the practice of promoting products, services, or brands through various online platforms. It encompasses a wide range of advertising methods and formats, targeting specific audiences based on their online behavior, interests, and demographics.
  It's important for businesses to carefully plan their online advertising strategies, define clear objectives, and choose the appropriate platforms and targeting options to reach their target audience effectively.

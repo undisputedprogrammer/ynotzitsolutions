@@ -14,7 +14,7 @@
 
 
         <div class="w-full mb-9 lg:mb-0  ">
-            <img class="" src="{{asset('images/about/blog-02.png')}}" alt="">
+            <img class="" src="{{asset('images/blog/blog-02.webp')}}" alt="">
             <p class=" text-[10px] lg:text-xs font-montlight text-gray-400 mt-1">May 18 2023 | By YNOTZ IT Solutions</p>
             <h2 class=" font-montsemibold text-lg my-4 lg:text-xl xl:text-2xl">Traditional Marketing vs Digital Marketing - Which one is better and why.</h2>
             <p class=" font-montlight text-sm lg:text-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
@@ -28,19 +28,19 @@
         <h1 class=" text-2xl font-montsemibold">Popular posts</h1>
 
         <div class=" flex w-full space-x-2 py-4 my-3 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.jpg')}}" alt="">
+            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
         <div class=" flex w-full space-x-2 py-4 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/blog 2-02.png')}}" alt="">
+            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/blog2-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
         <div class=" flex w-full space-x-2 py-4 my-3 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.jpg')}}" alt="">
+            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
         <div class=" flex w-full space-x-2 py-4 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/blog 2-02.png')}}" alt="">
+            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/blog2-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
 

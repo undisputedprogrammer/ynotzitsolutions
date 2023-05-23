@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/Business card design-02.png");
+    $hero = array('img' => "/images/services/Business card design-02.webp");
     $height="h-[180px]";
     $data = array('title' => "Buisiness Card Design", 'desc'=>"In this dynamic modern world, no one can imagine a business without proper high-end mobile solutions. With massive knowledge and
 expertise gained through years of experience, our Mobile Application development team is always ready to take a step beyond your expectations. We have an expert team of mobile app developers who create stunning mobile app designs. Our service expertise will cover all major Smartphone platforms including iOS, Android, and HTML5 app development.

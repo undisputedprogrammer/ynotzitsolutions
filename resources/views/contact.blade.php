@@ -25,7 +25,7 @@ $isblog=false;
 <x-desktop.nav :ishome="$ishome" :isabout="$isabout" :isservices="$isservices" :iscontact="$iscontact"  :isblog="$isblog" class="font-satoshimedium text-[14px] mr-14"></x-desktop.nav>
 {{-- desktop-navbar ends --}}
 @php
-   $hero = array('img' => "/images/about/contact.png", 'title'=>"Let us know how we can help you" );
+   $hero = array('img' => "/images/about/contact.webp", 'title'=>"Let us know how we can help you" );
    $height="h-[180px]";
 
 @endphp

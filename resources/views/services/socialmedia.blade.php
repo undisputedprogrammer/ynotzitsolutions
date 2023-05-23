@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/socialmedia.jpg");
+    $hero = array('img' => "/images/services/image 9-02.webp");
     $height="h-[180px]";
     $data = array('title' => "Social Media Management", 'desc'=>"It is the practice of creating, scheduling, publishing, and analyzing content on social media platforms to engage with an audience and achieve specific marketing goals. It involves managing social media accounts, monitoring online conversations, responding to comments or messages, and implementing strategies to build brand awareness, drive website traffic, and cultivate relationships with customers.
 

@@ -339,3 +339,22 @@ height: auto;
     }
   }
 
+
+
+.text{
+    border-right: 5px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+    animation: typing 2s ,
+            cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+
+@keyframes typing{
+    from {width: 0;}
+}

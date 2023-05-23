@@ -1,6 +1,6 @@
 @props(['ishome','isabout','isservices','iscontact', 'isblog'])
 <nav class=" h-fit pt-10 hidden lg:flex items-center justify-between w-full  box-shadow">
-<img data-aos="zoom-out-right"  class="ml-[3.5rem] h-[75px] mb-3" src="{{asset('images/logo.png')}}" alt="">
+<img data-aos="zoom-out-right"  class="ml-[3.5rem] h-[75px] mb-3" src="{{asset('images/home/ynotz it solutions-01.webp')}}" alt="">
 <div class="flex h-fit mt-3 w-[79%] border-t-2 border-black items-end pt-[18px] relative mr-7 pl-28 pr-10 justify-between font-arialbold">
     <div  class=" absolute h-1 w-14 bg-black top-0 left-0"></div>
     <a data-aos="fade-up"
