@@ -33,10 +33,83 @@ $isblog=false;
 
 <x-contact-body></x-contact-body>
 
+    <x-spinner></x-spinner>
+    <x-success-alert></x-success-alert>
+    <x-fail-alert></x-fail-alert>
+
 <div class=" my-8 lg:my-14"></div>
 
 <x-lets-talk></x-lets-talk>
 
 <x-common.footer></x-common.footer>
+
+<script>
+
+    let form= document.getElementById('form');
+            let spinner = document.getElementById('spinner');
+            let submitBtn = document.getElementById('submit');
+            let alert=document.getElementById('success-alert');
+            let failalert=document.getElementById('fail-alert');
+            let closefailAlert=document.getElementById('close-failalert');
+            let closeAlert=document.getElementById('close-alert');
+            let name=document.getElementById('name').value;
+            let email=document.getElementById('email').value;
+            let phone=document.getElementById('phone').value;
+            let message=document.getElementById('message').value;
+            let services=[];
+
+            alert.classList.toggle('hidden');
+
+
+            closeAlert.addEventListener('click',function(){
+                alert.classList.toggle('hidden');
+                form.reset();
+            })
+
+            closefailAlert.addEventListener('click',function(){
+                failalert.classList.toggle('hidden');
+                form.reset();
+            })
+
+            function formSubmit(){
+                for(let i=1;i<=14;i++){
+                    let cb=document.getElementById('cb'+i);
+                    if(cb.checked){
+                        services.push(cb.value)
+                    }
+
+                }
+                console.log(document.getElementById('name').value);
+                // console.log(name);
+                submitBtn.disabled = true;
+                spinner.classList.toggle('hidden');
+                console.log(services)
+                sendmail();
+            }
+
+            function sendmail(){
+                axios.post('/api/send', {
+                                name: document.getElementById('name').value,
+                                email: document.getElementById('email').value,
+                                phone : document.getElementById('phone').value,
+                                services: services,
+                                message: document.getElementById('message').value,
+                            }, {
+                                headers: {
+                                    "Content-Type": "multipart/form-data",
+                                },
+                            }).then(function(response) {
+
+                                    spinner.classList.toggle('hidden');
+                                    alert.classList.toggle('hidden');
+
+                                })
+                                .catch(function(error) {
+                                    spinner.classList.toggle('hidden');
+                                    failalert.classList.toggle('hidden');
+                                    console.log(error)
+                                });
+            }
+        </script>
 
 </x-defaultlayout>

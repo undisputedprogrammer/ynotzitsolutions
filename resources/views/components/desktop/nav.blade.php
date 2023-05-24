@@ -9,10 +9,12 @@
     data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $isabout]) }} class="" href="/about">About Us</a>
     <a data-aos="fade-up"
     data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $isservices]) }} class=" " href="/services">Our Services</a>
-    <a data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $iscontact]) }} class=" " href="/contact">Contact Us</a>
+
     <a data-aos="fade-up"
     data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $isblog]) }} class=" " href="/blogs">Blog</a>
+
+    <a data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $iscontact]) }} class=" " href="/contact">Contact Us</a>
 </div>
 
 </nav>
