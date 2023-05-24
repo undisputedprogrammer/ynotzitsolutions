@@ -1,4 +1,4 @@
-<div class=" w-[94%] mx-auto mt-7 lg:mt-16">
+<div class=" w-[94%] xl:w-[88%] mx-auto mt-7 lg:mt-16">
     <h2 class=" font-medium font-montsemibold text-center text-lg lg:text-4xl lg:mb-14">ARE YOU LOOKING FOR ANY OF THESE ?</h2>
 
     @php

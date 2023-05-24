@@ -13,7 +13,13 @@
 
     {{-- mobile carousel --}}
 
-    <x-common.service-carousel></x-common.service-carousel>
+    <div class=" lg:hidden">
+        <x-common.service-carousel></x-common.service-carousel>
+    </div>
+
+    <div class=" hidden lg:flex">
+        <x-common.service-grid></x-common.service-grid>
+    </div>
 
     <div>
         <h2 class=" font-montsemibold text-xl text-center mt-6 mb-4 lg:mb-9 lg:text-3xl">Multimedia Creatives</h2>
