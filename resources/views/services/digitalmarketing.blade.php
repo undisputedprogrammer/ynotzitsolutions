@@ -47,10 +47,11 @@ $isblog=false;
     $mainbg="bg-[#e2e5f6]";
     $subbg="bg-[#B9B9DF]";
 
-    $details = array('title1' => "Branding",'desc1'=>"Our main focus of digital marketing is to increase customer branding we are specialized in brand strategy and digital creation. Our approach us to take a bottom line of each project and consistently work on it to increase increased traffic, enhanced brand loyalty and new leads.. ", 'title2'=>"Innovation",'desc2'=>"Approach is innovative and focus is on increasing the marketing of the website. We use digital market tools, our team is constantly tinkering we follow digital marketing analytics and our in-house lab is a great place to come experience the latest in voice technology. We explore, innovate technology .", 'title3'=>"Dedication
-",'desc3'=>"We become fully immersed into our client business and industry, acquiring the same vision to accomplish goals together. In addition, we’ve leveraged the best practices learned from across our experience in a plethora of industries around the globe." );
+
+    $features=[array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?")];
 @endphp
-<x-servicedetail :main="$mainbg" :sub="$subbg" :details="$details"></x-servicedetail>
+
+<x-common.service-features :features="$features"></x-common.service-features>
 
 @php
     $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."

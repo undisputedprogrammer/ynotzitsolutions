@@ -25,7 +25,13 @@
 
 </div>
 
-<div class=" w-full bg-gray-200 my-3 xl:my-7">
+@php
+    $features=[array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?")];
+@endphp
+
+<x-common.service-features :features="$features"></x-common.service-features>
+
+{{-- <div class=" w-full bg-gray-200 my-3 xl:my-7">
     <div class="w-[90%] mx-auto bg-cyan-100 pt-1 lg:pt-4 pb-2 lg:pb-6 lg:flex lg:justify-evenly ">
         <div class=" w-[90%] mx-auto lg:basis-[28%] xl:basis-[22%]">
             <h3 class=" font-montregular text-sm lg:text-base xl:text-lg mt-2">Engagement</h3>
@@ -57,7 +63,7 @@
 
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class=" w-[88%] mx-auto">
     <p class=" font-montlight  text-[10px] md:text-xs xl:text-lg my-3 lg:my-6 xl:my-9">We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts

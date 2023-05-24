@@ -47,10 +47,11 @@ It's important for businesses to carefully plan and strategize their mobile app 
     $mainbg="bg-service-mob-main";
     $subbg="bg-service-mob-sub";
 
-    $details = array('heading'=>"Services we offer", 'title1' => "iOS Development",'desc1'=>"we strive for perfection in every app we build. Our iOS consultant team has clear cut knowledge of the development environment and related technologies. They work closely with our designers and connect with the clients to create pixel-perfect, visually striking products.", 'title2'=>"Android Development",'desc2'=>"It is the largest installed base of any mobile platform and growing in a pace which can't be defeated by anything else in the current scenario. Every day more and more users power up their android devices and keep searching for Apps, games and other related", 'title3'=>"Application Development
-",'desc3'=>"Clients from across the world have kept our Mobile development team really busy. Being one of the best mobile app development companies in India we have developed a variety of apps in-house with outstanding features and these apps have been widely appreciated" );
+
+    $features=[array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?")];
 @endphp
-<x-servicedetailwithheading :main="$mainbg" :sub="$subbg" :details="$details"></x-servicedetailwithheading>
+
+<x-common.service-features :features="$features"></x-common.service-features>
 
 @php
     $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."
