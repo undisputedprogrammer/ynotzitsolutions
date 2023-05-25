@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/blog/upload', function(){
+    return view('upload');
+})->middleware('auth');
+
+Route::post('/blog/new/create',[BlogController::class,'index']);
+
+Route::get('/displayblog/{id}',[BlogController::class, 'single']);
 
 Route::get('/', function () {
     return view('index');
@@ -29,6 +37,8 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+
 
 Route::get('/blogs', function () {
     return view('blog-index');
@@ -93,6 +103,8 @@ Route::get('/services/promoVideos', function(){
 Route::get('/services/customRequirements', function(){
     return view('services.customreq');
 });
+
+
 
 
 Route::get('/test', function(){

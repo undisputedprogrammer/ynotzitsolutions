@@ -1,50 +1,62 @@
 @php
 
-$service1 = array('img' =>"/images/icons/Web Development.webp" , 'title'=>"Web Development", 'desc'=>"Accomplishing the finest websites that are fulfilled by proficient and equipped expertise to fame your qualities." );
+    $service1 = ['img' => '/images/icons/Web Development.webp', 'title' => 'Website Development', 'desc' => 'Impressive and functonal websites for your business | SEO Friendly | Responsive Design | Easy Page Loads'];
 
-$service2 = array('img' =>"/images/icons/Mobile Applications.webp" ,'title'=>"Mobile Applications", 'desc'=>"To generate simple, efficient, and reliable ways for maintaining and extending your business and for more social integration." );
+    $service2 = ['img' => '/images/icons/Mobile Applications.webp', 'title' => 'Software Solutions & Mobile Apps', 'desc' => 'UI Design | Application Development | CMS | E-commerce | Hosting & Domain Registration | Custom Softwares'];
 
-$service3 = array('img' =>"/images/icons/Digital Marketing.webp" ,'title'=>"Digital Marketing", 'desc'=>"we serve to expand your brand and identity digitally to connect with new individuals and meet their desires" );
+    $service3 = ['img' => '/images/icons/Digital Marketing.webp', 'title' => 'Digital Marketing', 'desc' => 'Google Ads | Facebook Ads | Youtube Ads | Linked In Ads | Other Paid Promotions | Social Media Campaigns'];
 
-$service4 = array('img' =>"/images/icons/Search Engine Optimisation.webp" , 'title'=>"Search Engine Optimisation", 'desc'=>"To set your ranking at the top level on the search engine results page through effective ways." );
+    $service4 = ['img' => '/images/icons/Search Engine Optimisation.webp', 'title' => 'Search Engine Optimisation (SEO)', 'desc' => 'Local SEO | E-Commerce SEO | Link Building | Social Media Optimisation | Keyword Tracking | Content Research.'];
 
-$service5 = array('img' => "/images/icons/Online Advertisements.webp", 'title'=>"Online Advertisement", 'desc'=>"Advertise and market your products through the internet to access the desired audience." );
+    $service5 = ['img' => '/images/icons/Online Advertisements.webp', 'title' => 'Social Media Management', 'desc' => 'Build Followers | Reach & Brand Building | Promotional Campaigns | Regular Posts & Comments.'];
 
-$service6 = array('img' => "/images/icons/Social Media Management.webp",'title'=>"Social Media Management", 'desc'=>"To sustain your brand's social presence along with the maintenance of a relationship with the customer.." );
+    $service6 = [
+        'img' => '/images/icons/Social Media Management.webp',
+        'title' => "Graphics / Videos / Photos
+",
+        'desc' => 'Photography | Videography | Explainer Videos | Whiteboard Animations | Graphic Design | Branding Materials Design.',
+    ];
 
 @endphp
+<div class="flex flex-wrap w-[90%] mx-auto justify-evenly">
 
-<div class=" my-7 flex flex-wrap w-[90%] xl:w-[80%] mx-auto justify-between">
 
-    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[28%]">
+
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/webDevelopment">
             <x-common.service-card :service="$service1"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[28%]">
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/mobileApp">
             <x-common.service-card :service="$service2"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[28%]">
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/digitalMarketing">
             <x-common.service-card :service="$service3"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[28%]">
+    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/SEO">
             <x-common.service-card :service="$service4"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[28%]">
+
+
+
+    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/onlineAdvertisements">
             <x-common.service-card :service="$service5"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[28%]">
+    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/socialMediaManagement">
             <x-common.service-card :service="$service6"></x-common.service-card>
         </a>
     </div>
+
+
+
 
 </div>

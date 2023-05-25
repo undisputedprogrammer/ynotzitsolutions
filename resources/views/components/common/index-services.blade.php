@@ -13,15 +13,15 @@
 
     {{-- mobile carousel --}}
 
-    <div class=" lg:hidden">
+    <div class=" md:hidden">
         <x-common.service-carousel></x-common.service-carousel>
     </div>
 
-    <div class=" hidden lg:flex">
+    <div class=" hidden md:flex">
         <x-common.service-grid></x-common.service-grid>
     </div>
 
-    <div>
+    {{-- <div>
         <h2 class=" font-montsemibold text-xl text-center mt-6 mb-4 lg:mb-9 lg:text-3xl">Multimedia Creatives</h2>
 
         <div class=" lg:hidden">
@@ -37,7 +37,7 @@
         </div>
 
 
-    </div>
+    </div> --}}
 
 </div>
 

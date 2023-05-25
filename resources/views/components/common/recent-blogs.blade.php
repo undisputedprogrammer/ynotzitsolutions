@@ -1,7 +1,7 @@
 @props(['bg'])
 <div class=" w-[94%] {{$bg}}  mx-auto py-5">
     <h2 class=" font-myriadpro text-xl lg:text-3xl text-center">Recent Blogs</h2>
-    <div class="lg:flex lg:justify-evenly">
+    <div class="md:flex lg:justify-evenly">
         @php
             $blog1 = array('img' => "/images/blog/HOW CAN REGISTER STARTUP-02.webp", 'date'=>"24 May 2023", 'title'=>"HOW CAN YOU REGISTER A START-UP COMPANY ?", 'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus maiores explicabo nam quia eligendi minus iure reiciendis dignissimos sapiente!");
         @endphp

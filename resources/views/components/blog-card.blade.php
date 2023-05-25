@@ -4,7 +4,7 @@
     <img src="{{$blog['img']}}" alt="">
     <p class=" text-gray-400 text-xs ml-5">{{$blog['date']}}</p>
     <h2 class=" font-arialbold text-base w-[96%] mx-auto text-center mt-3 mb-2">{{$blog['title']}}</h2>
-    <p class=" font-myriadpro text-sm line-clamp-3 text-center  w-[95%] mx-auto pb-3">{{$blog['desc']}}</p>
+    <p class=" font-myriadpro text-sm line-clamp-3 text-center  w-[95%] mx-auto ">{{$blog['desc']}}</p>
 
 </a>
 

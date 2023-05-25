@@ -1,16 +1,16 @@
 <div class=" w-[88%] mx-auto mt-2 md:mt-3 xl:mt-10">
     <h1 class=" text-center font-montsemibold text-2xl md:text-3xl xl:text-5xl ">Web Development</h1>
-    <p class=" font-montlight  text-[10px] md:text-xs xl:text-lg mt-3 xl:mt-9">Web development is the process of creating websites or web applications that are accessible through the internet. It involves designing, building, and maintaining websites using various technologies and programming languages.
+    <p class=" font-montlight text-xs xl:text-lg mt-3 xl:mt-9">Web development is the process of creating websites or web applications that are accessible through the internet. It involves designing, building, and maintaining websites using various technologies and programming languages.
         It is a vast field with continuous advancements and evolving technologies. Staying up to date with the latest trends and best practices is crucial for web developers to build efficient, secure, and user-friendly web applications.
 
         </p>
 
-        <div class=" md:flex md:mt-4 md:items-center xl:w-[88%] xl:mx-auto">
-        <img class="w-full mt-3 xl:basis-[50%]" src="{{asset('images/services/web-dev.webp')}}" alt="">
+        <div class="w-[94%] mx-auto md:flex md:mt-4 md:items-center xl:w-[88%] xl:mx-auto">
+        <img class="w-full mt-3 md:w-[55%]" src="{{asset('images/services/web-dev.webp')}}" alt="">
 
         <div class=" md:order-first md:basis-[60%]  ">
             <h3 class=" text-lg font-montsemibold xl:text-3xl xl:mb-5">We are specialised in</h3>
-            <ul class=" list-disc  mx-auto text-sm xl:text-base font-montlight ">
+            <ul class=" list-disc  mx-auto text-xs md:text-sm xl:text-base font-montlight ">
                 <li>Custom Website Development</li>
                 <li>Web Based Application Development</li>
                 <li>Web Services Development</li>
@@ -66,7 +66,7 @@
 </div> --}}
 
 <div class=" w-[88%] mx-auto">
-    <p class=" font-montlight  text-[10px] md:text-xs xl:text-lg my-3 lg:my-6 xl:my-9">We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts
+    <p class=" font-montlight  text-xs xl:text-lg my-3 lg:my-6 xl:my-9">We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts
     </p>
 
 </div>
