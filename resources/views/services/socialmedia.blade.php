@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/image 9-02.webp");
+    $hero = array('img' => "/images/services/image 9-02.webp",'title'=>"Social Media Management");
     $height="h-[180px]";
     $data = array('title' => "Social Media Management", 'desc'=>"It is the practice of creating, scheduling, publishing, and analyzing content on social media platforms to engage with an audience and achieve specific marketing goals. It involves managing social media accounts, monitoring online conversations, responding to comments or messages, and implementing strategies to build brand awareness, drive website traffic, and cultivate relationships with customers.
 
@@ -38,11 +38,13 @@ $isblog=false;
     $img="/images/services/Mobile Application Development-02.png";
 @endphp
 
-<x-herowithouthead :hero="$hero" :height="$height"></x-herowithouthead>
+<x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
 
-<x-service-body :data="$data"></x-service-body>
+<x-common.socialmedia-main></x-common.socialmedia-main>
 
-@php
+{{-- <x-service-body :data="$data"></x-service-body> --}}
+
+{{-- @php
     $mainbg="bg-[#ddf5f7]";
     $subbg="bg-[#92dce7]";
 
@@ -55,7 +57,7 @@ $isblog=false;
     $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."
 @endphp
 
-<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph>
+<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph> --}}
 
 <x-lets-talk></x-lets-talk>
 

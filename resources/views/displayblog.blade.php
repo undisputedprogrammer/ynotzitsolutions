@@ -59,7 +59,7 @@ $isblog=true;
 
 
         <div class="w-full mb-9 lg:mb-0  ">
-            <img class="" src="{{asset('images/blog/blog-02.webp')}}" alt="">
+            <img class="" src="{{asset('/storage/images/image1.png')}}" alt="">
             <p class=" text-[10px] lg:text-xs font-montlight text-gray-400 mt-1">{{$data['blog']->created_at}} | By YNOTZ IT Solutions</p>
             {{-- {{dd($data)}} --}}
             {!!$data['blog']->content!!}

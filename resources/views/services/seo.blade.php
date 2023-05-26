@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/seo.webp");
+    $hero = array('img' => "/images/services/seo.webp", 'title'=>'Search Engine Optmization');
     $height="h-[180px]";
     $data = array('title' => "Search Engine Optimisation", 'desc'=>"SEO, which stands for Search Engine Optimization, is the practice of optimizing websites and online content to improve their visibility and ranking in search engine results pages (SERPs). SEO plays a crucial role in digital marketing strategies for businesses.  Staying up-to-date with the ever-evolving SEO landscape, including algorithm changes and industry trends, is crucial for businesses to maintain their online visibility and drive sustainable organic traffic to their websites.
 
@@ -38,11 +38,13 @@ $isblog=false;
     $img="/images/services/Mobile Application Development-02.png";
 @endphp
 
-<x-herowithouthead :hero="$hero" :height="$height"></x-herowithouthead>
+<x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
 
-<x-service-body :data="$data"></x-service-body>
+<x-common.seo-main></x-common.seo-main>
 
-@php
+{{-- <x-service-body :data="$data"></x-service-body> --}}
+
+{{-- @php
     $mainbg="bg-[#ddf5f7]";
     $subbg="bg-[#92dce7]";
 
@@ -56,7 +58,7 @@ $isblog=false;
     $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."
 @endphp
 
-<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph>
+<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph> --}}
 
 <x-lets-talk></x-lets-talk>
 

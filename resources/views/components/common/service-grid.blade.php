@@ -28,7 +28,7 @@
         </a>
     </div>
     <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
-        <a href="/services/mobileApp">
+        <a href="/services/softwaresolutions">
             <x-common.service-card :service="$service2"></x-common.service-card>
         </a>
     </div>
@@ -46,12 +46,12 @@
 
 
     <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
-        <a href="/services/onlineAdvertisements">
+        <a href="/services/socialMediaManagement">
             <x-common.service-card :service="$service5"></x-common.service-card>
         </a>
     </div>
     <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
-        <a href="/services/socialMediaManagement">
+        <a href="/services/multimedia">
             <x-common.service-card :service="$service6"></x-common.service-card>
         </a>
     </div>

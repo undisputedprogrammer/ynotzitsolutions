@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/mobile-app.webp", 'title'=>"Mobile Application Development" );
+    $hero = array('img' => "/images/services/mobile-app.webp", 'title'=>"Software Solutions & Mobile Apps" );
     $height="h-[180px]";
     $data = array('title' => "Let your business grow with us", 'desc'=>"Mobile applications have become an integral part of modern business strategies. They offer numerous benefits and opportunities for businesses to connect with their customers, enhance productivity, and improve overall efficiency.
 It's important for businesses to carefully plan and strategize their mobile app development to align with their specific goals and target audience. A well-designed and user-friendly mobile application can significantly contribute to business growth, customer satisfaction, and operational efficiency.
@@ -41,23 +41,25 @@ It's important for businesses to carefully plan and strategize their mobile app 
 
 <x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
 
-<x-service-bodywithlist :data="$data" :listhead="$listhead" :lists="$lists" :img="$img"></x-service-bodywithlist>
+{{-- <x-service-bodywithlist :data="$data" :listhead="$listhead" :lists="$lists" :img="$img"></x-service-bodywithlist> --}}
 
-@php
+<x-common.softwaresolutions-main></x-common.softwaresolutions-main>
+
+{{-- @php
     $mainbg="bg-service-mob-main";
     $subbg="bg-service-mob-sub";
 
 
     $features=[array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?")];
-@endphp
+@endphp --}}
 
-<x-common.service-features :features="$features"></x-common.service-features>
+{{-- <x-common.service-features :features="$features"></x-common.service-features> --}}
 
-@php
+{{-- @php
     $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."
 @endphp
 
-<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph>
+<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph> --}}
 
 <x-lets-talk></x-lets-talk>
 

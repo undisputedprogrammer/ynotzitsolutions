@@ -28,7 +28,7 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/creating ripples.webp", 'title'=>"Creating ripples in the Internet" );
+    $hero = array('img' => "/images/services/creating ripples.webp", 'title'=>"Web Development" );
     $height="h-[180px]"
 @endphp
 

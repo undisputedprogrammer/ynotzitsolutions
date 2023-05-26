@@ -28,19 +28,19 @@
         <h1 class=" text-2xl font-montsemibold">Popular posts</h1>
 
         <div class=" flex w-full space-x-2 py-4 my-3 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.webp')}}" alt="">
+            <img class="w-[130px] aspect-[2/1] " src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
         <div class=" flex w-full space-x-2 py-4 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/blog2-02.webp')}}" alt="">
+            <img class="w-[130px] aspect-[2/1]" src="{{asset('images/blog/blog2-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
         <div class=" flex w-full space-x-2 py-4 my-3 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.webp')}}" alt="">
+            <img class="w-[130px] aspect-[2/1]" src="{{asset('images/blog/HOW CAN REGISTER STARTUP-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
         <div class=" flex w-full space-x-2 py-4 border-b-2">
-            <img class="w-[90%] aspect-[2/1]" src="{{asset('images/blog/blog2-02.webp')}}" alt="">
+            <img class="w-[130px] aspect-[2/1]" src="{{asset('images/blog/blog2-02.webp')}}" alt="">
             <h3 class=" font-montregular text-base">Scope of ecommerce: The future of online business in India</h3>
         </div>
 

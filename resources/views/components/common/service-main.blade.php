@@ -21,7 +21,7 @@
     </div>
 
 
-    <div>
+    {{-- <div>
         <h2 class=" font-montregular text-xl text-center mt-6 mb-4 lg:mb-9 lg:text-3xl xl:text-4xl">Multimedia Creatives</h2>
 
         <div class=" lg:hidden">
@@ -37,6 +37,6 @@
     </div>
 
 
-    </div>
+    </div> --}}
 
 </div>

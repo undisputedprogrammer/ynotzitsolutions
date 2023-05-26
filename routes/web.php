@@ -52,7 +52,7 @@ Route::get('/services/webDevelopment', function(){
     return view('services.webdevelopment');
 });
 
-Route::get('/services/mobileApp', function(){
+Route::get('/services/softwaresolutions', function(){
     return view('services.mobileappdevelopment');
 });
 
@@ -72,7 +72,7 @@ Route::get('/services/socialMediaManagement', function(){
     return view('services.socialmedia');
 });
 
-Route::get('/services/branding', function(){
+Route::get('/services/multimedia', function(){
     return view('services.branding');
 });
 

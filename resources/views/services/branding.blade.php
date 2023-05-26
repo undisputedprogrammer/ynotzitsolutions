@@ -28,36 +28,40 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 @php
-    $hero = array('img' => "/images/services/BRANDING-02.webp");
+
+    $hero = array('img' => "/images/services/multimedia croped.webp", 'title'=>"Graphics / Videos / Photos");
     $height="h-[180px]";
-    $data = array('title' => "Branding", 'desc'=>"Branding in business refers to the process of creating and cultivating a distinct identity, image, and perception of a company, product, or service in the minds of customers and stakeholders. It encompasses various elements, including a company's name, logo, tagline, visual design, messaging, values, and overall customer experience.
+    $data = array('title' => "Let your business grow with us", 'desc'=>"Mobile applications have become an integral part of modern business strategies. They offer numerous benefits and opportunities for businesses to connect with their customers, enhance productivity, and improve overall efficiency.
+It's important for businesses to carefully plan and strategize their mobile app development to align with their specific goals and target audience. A well-designed and user-friendly mobile application can significantly contribute to business growth, customer satisfaction, and operational efficiency.
 
 " );
     $listhead="Why should you choose us ?";
     $lists=['Quality oriented work force', 'In depth knowledge of frameworks and mobile technologies','On- demand capacity to meet tight deadlines','Timely delivery and cost effective service', 'Customer centric procedures'];
-    $img="/images/services/Mobile Application Development-02.png";
+    $img="/images/services/multimedia croped.webp";
 @endphp
 
-<x-multimedia-hero :hero="$hero"></x-multimedia-hero>
+{{-- <img src="{{asset('images/services/multimedia croped.webp')}}" alt=""> --}}
+<x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
 
+{{-- <x-service-bodywithlist :data="$data" :listhead="$listhead" :lists="$lists" :img="$img"></x-service-bodywithlist> --}}
 
-<x-service-body :data="$data"></x-service-body>
+<x-common.multimedia-main></x-common.multimedia-main>
 
-@php
-    $mainbg="bg-[#ddf5f7]";
-    $subbg="bg-[#92dce7]";
+{{-- @php
+    $mainbg="bg-service-mob-main";
+    $subbg="bg-service-mob-sub";
 
 
     $features=[array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?")];
-@endphp
+@endphp --}}
 
-<x-common.service-features :features="$features"></x-common.service-features>
+{{-- <x-common.service-features :features="$features"></x-common.service-features> --}}
 
-@php
+{{-- @php
     $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."
 @endphp
 
-<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph>
+<x-service-paragraph :paragraph="$paragraph"></x-service-paragraph> --}}
 
 <x-lets-talk></x-lets-talk>
 

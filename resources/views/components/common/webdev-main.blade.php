@@ -1,11 +1,20 @@
-<div class=" w-[88%] mx-auto mt-2 md:mt-3 xl:mt-10">
-    <h1 class=" text-center font-montsemibold text-2xl md:text-3xl xl:text-5xl ">Web Development</h1>
-    <p class=" font-montlight text-xs xl:text-lg mt-3 xl:mt-9">Web development is the process of creating websites or web applications that are accessible through the internet. It involves designing, building, and maintaining websites using various technologies and programming languages.
-        It is a vast field with continuous advancements and evolving technologies. Staying up to date with the latest trends and best practices is crucial for web developers to build efficient, secure, and user-friendly web applications.
+<div class=" w-[88%] mx-auto mt-2 md:mt-3 xl:my-10">
+    {{-- <h1 class=" text-center font-montsemibold text-2xl md:text-3xl xl:text-5xl ">Web Development</h1> --}}
+    <p class=" font-montlight text-sm md:text-base xl:text-lg mt-3 xl:mt-9">A good website is more than a collection of a few pages. It’s about how you communicate.  It’s how you show off your products & capabilities, and most importantly, it’s how you generate & convert leads. Your website creates your customers’ first impression about your business. You need to get it right. We make it happen for you. We make sure that your services & products are presented at their best on your website. It doesn’t end with your website, it’s just a beginning.</p>
+
+        <p class=" font-montlight text-sm md:text-base xl:text-lg mt-2 xl:mt-5">If you want to create a website, conforming to your budgetary constraints, to represent your business and service propositions exceptionally well on the internet, we can help you.</p>
+
+        <img class="w-full mt-3 md:w-[55%] mx-auto" src="{{asset('images/services/web-dev.webp')}}" alt="">
+
+
+        <p class=" font-montlight text-sm xl:text-lg mt-2 xl:mt-5 xl:text-center">WE BUILD YOUR BUSINESS, WE BUILD YOUR BRAND.
+        </p>
+
+        <p class=" font-montlight text-sm md:text-base xl:text-lg mt-2 mb-4 xl:mt-5">If you are going to redo or just plain do this website thing, let us help you do it right.  You need to do the due research, analyse the competition, create content that matters, communicate effectively, and shall be able to convert your visitors. We Design, Develop, Maintain and Promote your website.
 
         </p>
 
-        <div class="w-[94%] mx-auto md:flex md:mt-4 md:items-center xl:w-[88%] xl:mx-auto">
+        {{-- <div class="w-[94%] mx-auto md:flex md:mt-4 md:items-center xl:w-[88%] xl:mx-auto">
         <img class="w-full mt-3 md:w-[55%]" src="{{asset('images/services/web-dev.webp')}}" alt="">
 
         <div class=" md:order-first md:basis-[60%]  ">
@@ -20,16 +29,16 @@
                 <li>Theme Customization and Development</li>
             </ul>
         </div>
-    </div>
+    </div> --}}
 
 
 </div>
 
-@php
+{{-- @php
     $features=[array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?"), array('title'=>"Engagement",'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non explicabo accusantium distinctio soluta molestiae, doloremque  quis ipsam, fuga adipisci?")];
-@endphp
+@endphp --}}
 
-<x-common.service-features :features="$features"></x-common.service-features>
+{{-- <x-common.service-features :features="$features"></x-common.service-features> --}}
 
 {{-- <div class=" w-full bg-gray-200 my-3 xl:my-7">
     <div class="w-[90%] mx-auto bg-cyan-100 pt-1 lg:pt-4 pb-2 lg:pb-6 lg:flex lg:justify-evenly ">
@@ -65,8 +74,8 @@
     </div>
 </div> --}}
 
-<div class=" w-[88%] mx-auto">
+{{-- <div class=" w-[88%] mx-auto">
     <p class=" font-montlight  text-xs xl:text-lg my-3 lg:my-6 xl:my-9">We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts
     </p>
 
-</div>
+</div> --}}

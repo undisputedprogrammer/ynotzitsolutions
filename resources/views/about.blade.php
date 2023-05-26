@@ -27,14 +27,21 @@ $isblog=false;
 @php
    $hero = array('img' => "/images/about/about2.webp", 'title'=>"We not only design products, We design Dreams" );
    $height="h-[180px]";
-   $data = array('title' => "ABOUT US", 'desc'=>"Having known as a website development company in the initial stages, we have now blossomed into a global IT solution provider.
-" );
+   $data = array('title' => "ABOUT US", 'desc1'=>"YNOTZ IT Solutions is a software Solutions and Digital Marketing services provider company based at Cochin, Kerala, India.",'desc2'=>"We started off as a proprietary firm YNOTZ Web Solutions in the year 2017. We recently incorporated as a company under the name YNOTZ IT Solutions Private Limited.",'desc3'=>"We are a young and enthusiastic team of software developers, designers and content creators. We are passionate to do great work and produce amazing results. The one value we admire the most is integrity. Honesty, clear communication and honouring commitments are certain qualities that we strive to uphold.",'desc4'=>"We work with core web technologies such as HTML, CSS, Javascript, PHP, MySQL, Postgersql, Node.js and frameworks such as Laravel, Alpine JS, Tailwind CSS etc.",'desc5'=>"When faced with challenges, many feel dejected and think 'why' did it happen that way. But then, there are a few, who dare to think out of the box, conceive innovative solutions and think 'Why Not?'. We believe the latter are the ones who drive the world forward. We admire and celebrate that spirit. We are the YNOTZ.");
 @endphp
 <x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
 
-<x-service-body :data="$data"></x-service-body>
+<x-about-body :data="$data"></x-about-body>
 
-<div class=" my-8 lg:my-14"></div>
+<x-common.about-body></x-common.about-body>
+
+@php
+    $paragraph="We are one of the renowned website Development Company and proficient in ecommerce website development proved to be one of best website design firm. Our methods are user friendly agile, professional website design pattern and standard codes architecture which offers uniformity is very open to any customization with very less efforts."
+@endphp
+
+{{-- <x-service-paragraph :paragraph="$paragraph"></x-service-paragraph> --}}
+
+<div class=" my-6 lg:my-14"></div>
 
 <x-lets-talk></x-lets-talk>
 

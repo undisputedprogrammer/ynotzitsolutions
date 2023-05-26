@@ -33,7 +33,7 @@ $service6 = array('img' => "/images/icons/Social Media Management.webp",'title'=
 
 
             <swiper-slide class="  ">
-                <a href="/services/mobileApp">
+                <a href="/services/softwaresolutions">
                 <x-common.service-card :service="$service2"></x-common.service-card>
             </a>
 
@@ -57,14 +57,14 @@ $service6 = array('img' => "/images/icons/Social Media Management.webp",'title'=
 
 
             <swiper-slide class="">
-                <a href="/services/onlineAdvertisements">
+                <a href="/services/socialMediaManagement">
                 <x-common.service-card :service="$service5"></x-common.service-card>
             </a>
 
             </swiper-slide>
 
             <swiper-slide class="  ">
-                <a href="/services/socialMediaManagement">
+                <a href="/services/multimedia">
                 <x-common.service-card :service="$service6"></x-common.service-card>
                 </a>
 
