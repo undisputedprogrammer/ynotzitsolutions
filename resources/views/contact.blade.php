@@ -29,7 +29,8 @@ $isblog=false;
    $height="h-[180px]";
 
 @endphp
-<x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
+{{-- <x-herowithtext :hero="$hero" :height="$height"></x-herowithtext> --}}
+<x-common.contact-hero></x-common.contact-hero>
 
 <x-contact-body></x-contact-body>
 

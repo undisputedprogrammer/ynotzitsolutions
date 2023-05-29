@@ -18,13 +18,17 @@ Route::get('/blog/upload', function(){
     return view('upload');
 })->middleware('auth');
 
+Route::get('/blog/delete/{id}', [BlogController::class, 'delete'])->middleware('auth');
+
+Route::get('/blog/update/{id}',[BlogController::class, 'update'])->middleware('auth');
+
+Route::post('/blog/save/{id}',[BlogController::class, 'save'])->middleware('auth');
+
 Route::post('/blog/new/create',[BlogController::class,'index']);
 
 Route::get('/displayblog/{id}',[BlogController::class, 'single']);
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [BlogController::class, 'home']);
 
 Route::get('/services', function () {
     return view('service');
@@ -40,13 +44,10 @@ Route::get('/contact', function () {
 
 
 
-Route::get('/blogs', function () {
-    return view('blog-index');
-});
+Route::get('/blogs', [BlogController::class, 'all']);
 
-Route::get('/blog/{id}', function () {
-    return view('blog');
-});
+Route::get('/blog/{id}', [BlogController::class, 'single']);
+
 
 Route::get('/services/webDevelopment', function(){
     return view('services.webdevelopment');

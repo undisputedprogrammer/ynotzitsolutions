@@ -17,7 +17,7 @@
             <div class=" z-20 m-4 bg-white rounded-[2rem] p-4 h-[265px] flex flex-col justify-center shadow-md">
                 {{-- <div class=""> --}}
                 <h3 class=" font-montregular text-sm md:text-base lg:text-lg  mb-3">{{$features[0]['title']}}</h3>
-                <p class="  font-montlight text-xs md:text-sm  ">{{$features[0]['desc']}}</p>
+                <p class="  font-montmedium text-xs md:text-sm  ">{{$features[0]['desc']}}</p>
             {{-- </div> --}}
             </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="m-4 bg-white rounded-[2rem] p-4 h-[265px] flex flex-col justify-center shadow-md">
                 {{-- <div class=""> --}}
                 <h3 class=" font-montregular text-sm md:text-base lg:text-lg mb-3">{{$features[1]['title']}}</h3>
-                <p class="  font-montlight text-xs md:text-sm  ">{{$features[1]['desc']}}</p>
+                <p class="  font-montmedium text-xs md:text-sm  ">{{$features[1]['desc']}}</p>
             {{-- </div> --}}
             </div>
         </div>
@@ -53,7 +53,7 @@
             <div class="m-4 bg-white rounded-[2rem] p-4 h-[265px] flex flex-col justify-center shadow-md">
                 {{-- <div class=""> --}}
                 <h3 class=" font-montregular text-sm md:text-base lg:text-lg mb-3">{{$features[2]['title']}}</h3>
-                <p class="  font-montlight text-xs md:text-sm  ">{{$features[2]['desc']}}</p>
+                <p class="  font-montmedium text-xs md:text-sm  ">{{$features[2]['desc']}}</p>
             {{-- </div> --}}
             </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="m-4 bg-white rounded-[2rem] p-4 h-[265px] flex flex-col justify-center shadow-md">
                 {{-- <div class=""> --}}
                 <h3 class=" font-montregular text-sm md:text-base lg:text-lg mb-3">{{$features[3]['title']}}</h3>
-                <p class="  font-montlight text-xs md:text-sm  ">{{$features[3]['desc']}}</p>
+                <p class="  font-montmedium text-xs md:text-sm  ">{{$features[3]['desc']}}</p>
             {{-- </div> --}}
             </div>
         </div>

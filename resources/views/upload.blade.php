@@ -46,7 +46,8 @@ $isblog=false;
             </div>
 
             <div>
-                <label class="sr-only" for="title">Description</label>
+                <label class="sr-only" for="title
+                ">Description</label>
                 <input
                   class="w-full rounded-lg border-gray-200 p-3 text-sm"
                   placeholder="Enter a short description"
@@ -66,9 +67,9 @@ $isblog=false;
                     <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <div class="flex text-sm text-gray-600">
-                    <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-black hover:text-white hover:bg-black border border-black font-montmedium px-1 ">
-
-                        <input type="file" name="blogimg" required id="blogimg" class="border-0">
+                    <label id="file-label" for="blog-img" class="relative cursor-pointer bg-white rounded-md font-medium text-black hover:text-white hover:bg-black border border-black font-montmedium px-1 ">
+                        upload image
+                        <input  type="file" name="blogimg" required id="blog-img" class="border-0 invisible ">
                       </label>
 
                 </div>
@@ -76,7 +77,11 @@ $isblog=false;
             </div>
             </div> --}}
 
-            <input type="file" name="blogimg">
+            {{-- <label for=""></label> --}}
+
+                <input type="file" name="blogimg" required placeholder="Change image">
+
+
 
 
 
@@ -108,7 +113,16 @@ $isblog=false;
     </div>
   </section>
 
-  <x-lets-talk></x-lets-talk>
+
+  <script>
+    let uploader= document.getElementById('blog-img');
+    let label=document.getElementById('file-label');
+    uploader.addEventListener('change',()=>{
+       label.innerText = uploader.files[0].name;
+    })
+</script>
+
+  {{-- <x-lets-talk></x-lets-talk> --}}
 
 <x-common.footer></x-common.footer>
 

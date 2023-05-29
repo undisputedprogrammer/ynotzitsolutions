@@ -7,7 +7,7 @@
   @font-face {
     font-family:"montserrat-light";
 
-    src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
   }
 
   @font-face {
@@ -15,6 +15,13 @@
 
     src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
   }
+
+  @font-face {
+    font-family:"montserrat-regular";
+
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  }
+
 
  h1 {
     font-family: 'montserrat-bold';
@@ -42,11 +49,14 @@
     }
 
     p2{
+        display: block;
         font-family: 'montserrat-light';
         font-size: 13px;
         margin-top: 7px;
         line-height: 18px;
-        padding-left: 25px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     ul{
@@ -62,6 +72,10 @@
         font-family: 'montserrat-light';
         font-size: 14px;
         line-height: 20px;
+     }
+
+     span{
+        font-family: 'montserrat-regular';
      }
 
     @media(min-width:1024px){
@@ -82,6 +96,11 @@
         p{
             font-size: 17px;
             line-height: 25px;
+        }
+
+        p2{
+            font-size: 15px;
+            line-height: 22px;
         }
 
         ul,ol{
@@ -109,6 +128,11 @@
         p{
             font-size: 19px;
             line-height: 27px;
+        }
+
+        p2{
+            font-size: 17px;
+            line-height: 24px;
         }
 
         ul,ol{

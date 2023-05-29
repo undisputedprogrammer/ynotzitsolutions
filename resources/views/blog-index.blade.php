@@ -25,7 +25,11 @@ $isblog=true;
 <x-desktop.nav :ishome="$ishome" :isabout="$isabout" :isservices="$isservices" :iscontact="$iscontact"  :isblog="$isblog" class="font-satoshimedium text-[14px] mr-14"></x-desktop.nav>
 {{-- desktop-navbar ends --}}
 
-<x-blogsbody></x-blogsbody>
+{{-- @php
+    dd($blogs);
+@endphp --}}
+
+<x-blogsbody :blogs="$blogs"></x-blogsbody>
 
 <x-lets-talk></x-lets-talk>
 

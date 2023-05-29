@@ -15,9 +15,9 @@
 
         <div class="w-full mb-9 lg:mb-0  ">
             <img class="" src="{{asset('images/blog/blog-02.webp')}}" alt="">
-            <p class=" text-[10px] lg:text-xs font-montlight text-gray-400 mt-1">May 18 2023 | By YNOTZ IT Solutions</p>
+            <p class=" text-[10px] lg:text-xs font-montmedium text-gray-400 mt-1">May 18 2023 | By YNOTZ IT Solutions</p>
             <h2 class=" font-montsemibold text-lg my-4 lg:text-xl xl:text-2xl">Traditional Marketing vs Digital Marketing - Which one is better and why.</h2>
-            <p class=" font-montlight text-sm lg:text-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+            <p class=" font-montmedium text-sm lg:text-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
                 veniam, quis nostrud exerci Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 Ut wisi enim ad minim veniam, quis nostrud exerciLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -51,7 +51,7 @@
         <div class=" my-4 flex flex-wrap justify-start">
 
             @foreach ($categories as $category)
-                <a class=" font-montlight uppercase border border-black text-gray-600 py-1 px-2 rounded-md my-1 mx-1" href="#">{{$category}}</a>
+                <a class=" font-montmedium uppercase border border-black text-gray-600 py-1 px-2 rounded-md my-1 mx-1" href="#">{{$category}}</a>
             @endforeach
 
         </div>

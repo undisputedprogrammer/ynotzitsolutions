@@ -37,7 +37,7 @@
             <x-common.service-card :service="$service3"></x-common.service-card>
         </a>
     </div>
-    <div data-aos="fade-up-right" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
+    <div data-aos="fade-up-left" data-aos-duration="600" class=" w-[30%] xl:w-[27%]">
         <a href="/services/SEO">
             <x-common.service-card :service="$service4"></x-common.service-card>
         </a>

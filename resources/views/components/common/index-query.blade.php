@@ -5,20 +5,20 @@
         $img1="/images/icons/A website or blog.webp";
         $title1="Get started";
         $description1="Get the digital props for your start-up. Build a brand identity.";
-        $service1="Websites, Brochures, Printable stationaries, Online brand building";
+        $service1="Websites | Brochures | Printable stationaries | Online brand building";
         $url="/services";
         $img2="/images/icons/E-commerce Website.webp";
         $title2="Accelerate Growth";
-        $description2="Increase brand awareness, sales and customer satisfaction.";
-        $service2="Social Media Campaigns, Online Advertisements, Re-Targeting, E-commerce";
+        $description2="Increase brand awareness | sales and customer satisfaction.";
+        $service2="Social Media Campaigns | Online Advertisements | Re-Targeting | E-commerce";
         $img3="/images/icons/Mobile App to promote.webp";
         $title3="Better efficiency & Control";
         $description3="Software solutions to manage various aspects of your business";
-        $service3=" Products, Inventory, Sales, Accounting, Customer Relations Management, Production Management, Custom Software Solutions, Mobile Apps";
+        $service3=" Products | Inventory | Sales | Accounting | Customer Relations Management | Production Management, Custom Software Solutions, Mobile Apps";
         $img4="/images/icons/Manage accounts.webp";
         $title4="Creative Ideas";
         $description4="Plan something extra ordinary for your business.";
-        $service4="Amazing Promo Graphics & Videos, Posters, Brochures, Promo Videos, Unique Social Media Campaigns, Striking Online Ads";
+        $service4="Amazing Promo Graphics & Videos | Posters | Brochures | Promo Videos | Unique Social Media Campaigns | Striking Online Ads";
 
 
     @endphp

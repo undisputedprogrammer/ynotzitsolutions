@@ -14,8 +14,8 @@
     <p>production or a full fledged digital marketing campaign - we have a solution for you.</p>
     </div>
     <div class="text-center w-full lg:my-16">
-        <a href="#" class="font-normal w-fit mx-auto text-[8px] border-2 lg:border-[3px] border-blue
-        rounded-3xl py-1 md:text-sm  lg:text-2xl lg:py-4 px-7 lg:px-14">CONTACT US NOW FOR A FREE QUOTE</a>
+        <a href="/contact" class="font-normal w-fit mx-auto text-[8px] border-2 lg:border-[3px] border-blue
+        rounded-3xl py-1 md:text-sm  lg:text-2xl lg:py-4 px-7 lg:px-14">GET IN TOUCH WITH US</a>
     </div>
  {{-- <x-glow></x-glow> --}}
 </div>

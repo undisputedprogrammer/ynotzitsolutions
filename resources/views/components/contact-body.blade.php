@@ -1,7 +1,8 @@
 <div class=" w-[90%] md:w-[80%] xl:w-[68%] mx-auto my-12 md:my-20">
-    <h3 class=" font-montsemibold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue mb-4">Get in touch with us</h3>
-    <form id="form" class="flex-col flex lg:flex-row space-y-6 lg:space-y-0 justify-between " onsubmit="formSubmit();return false" method="post" enctype="multipart/form-data">
+    {{-- <h3 class=" font-montsemibold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blue mb-4">Get in touch with us</h3> --}}
+    <form id="form" class="flex flex-col " onsubmit="formSubmit();return false" method="post" enctype="multipart/form-data">
         @csrf
+        <div class="flex-col flex lg:flex-row space-y-6 lg:space-y-0 justify-between border-2 border-gray-500 border-dashed p-4 rounded-2xl">
         <div class=" basis-1/2">
         <input id="name" class="  w-full border-2 border-stone-400 font-montregular pl-5 lg:py-[16px] mt-3 lg:mt-6" type="text" placeholder="Name" required>
 
@@ -23,7 +24,7 @@
         <textarea id="message" class="  w-full border-2 border-stone-400 font-montregular pl-5 lg:py-[16px] mt-3 lg:mt-6" type="text" placeholder="Requirement" required></textarea>
 
 
-          <button id="submit" class=" border-2 border-[#1976bc]  hover:bg-[#1976bc] hover:text-white  text-blue font-montsemibold w-[150px] self-center py-2 mt-3 lg:mt-8  lg:py-[13px] lg:text-lg" type="submit" name="submit">Send Enquiry</button>
+
         </div>
 
     <div class="">
@@ -67,5 +68,7 @@
 
     </div>
     </div>
+</div>
+<button id="submit" class=" border-2 border-[#1976bc]  hover:bg-[#1976bc] hover:text-white  text-blue font-montsemibold w-[150px] self-center py-2 mt-3 lg:mt-8  lg:py-[13px] lg:text-lg" type="submit" name="submit">Send Enquiry</button>
 </form>
 </div>

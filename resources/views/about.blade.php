@@ -29,7 +29,8 @@ $isblog=false;
    $height="h-[180px]";
    $data = array('title' => "ABOUT US", 'desc1'=>"YNOTZ IT Solutions is a software Solutions and Digital Marketing services provider company based at Cochin, Kerala, India.",'desc2'=>"We started off as a proprietary firm YNOTZ Web Solutions in the year 2017. We recently incorporated as a company under the name YNOTZ IT Solutions Private Limited.",'desc3'=>"We are a young and enthusiastic team of software developers, designers and content creators. We are passionate to do great work and produce amazing results. The one value we admire the most is integrity. Honesty, clear communication and honouring commitments are certain qualities that we strive to uphold.",'desc4'=>"We work with core web technologies such as HTML, CSS, Javascript, PHP, MySQL, Postgersql, Node.js and frameworks such as Laravel, Alpine JS, Tailwind CSS etc.",'desc5'=>"When faced with challenges, many feel dejected and think 'why' did it happen that way. But then, there are a few, who dare to think out of the box, conceive innovative solutions and think 'Why Not?'. We believe the latter are the ones who drive the world forward. We admire and celebrate that spirit. We are the YNOTZ.");
 @endphp
-<x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
+{{-- <x-herowithtext :hero="$hero" :height="$height"></x-herowithtext> --}}
+<x-common.about-hero></x-common.about-hero>
 
 <x-about-body :data="$data"></x-about-body>
 
