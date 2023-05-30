@@ -1,7 +1,7 @@
 <div class=" w-[95%]  mx-auto relative  ">
 {{-- <img src="{{asset('images/home/IMAGE1.webp')}}" alt=""> --}}
 {{-- <img class=" object-cover" src="{{asset('images/home/homebg.jpg')}}" alt=""> --}}
-<img class=" lg:hidden" src="{{asset('images/home/Home mob-01-01.webp')}}" alt="">
+<img class=" lg:hidden" src="{{asset('images/home/Home page-01-02.webp')}}" alt="">
 <img class=" hidden lg:flex" src="{{asset('images/home/HOME-PAGE-LAPTOP-01-01.webp')}}" alt="">
 {{-- <img class="lg:hidden absolute top-0 left-0" src="{{asset('images/home/template-mobile.webp')}}" alt=""> --}}
 {{-- <img class=" absolute top-0 left-0 xl:left-[-3px] hidden lg:flex w-full" src="{{asset('images/home/template3.webp')}}" alt=""> --}}
@@ -36,7 +36,7 @@
 
   <div class="mt-2 md:mt-4 ">
     <div data-aos="fade-up"
-    data-aos-anchor-placement="bottom-bottom" class=" flex  justify-evenly lg:justify-start lg:space-x-4 mx-auto lg:mx-0">
+    data-aos-anchor-placement="bottom-bottom" class=" flex  justify-start lg:justify-start space-x-4 mx-auto lg:mx-0">
         <a class=" flex text-white font-myriadpro border-2 border-white rounded-3xl px-4 py-1 xl:text-lg" href="/contact">Contact Us
             <img class=" w-7 ml-2" src="{{asset('images/icons/Arrow1.svg')}}" alt="">
         </a>
