@@ -36,6 +36,8 @@ $isblog=false;
 
                 @csrf
 
+                <h1 class="block uppercase tracking-wide text-gray-700 text-center mb-4 md:mb-8 lg:mb-10 font-bold">Application for full stack web development training</h1>
+
                   <div class="w-full px-3 mb-3 ">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
                     Name
