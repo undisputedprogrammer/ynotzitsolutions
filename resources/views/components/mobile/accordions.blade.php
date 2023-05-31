@@ -120,8 +120,8 @@
       </div>
 
 
-      <div class="flex justify-center w-full my-5 md:mt-2 lg:mt-4 lg:mt-9">
-        <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-blue border-2 border-blue-500 hover:bg-blue-500 hover:text-white" href="/test/apply">Apply Now</a>
+      <div class="flex justify-center w-full my-5 md:mt-2 lg:mt-6 ">
+        <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150" href="/test/apply">Apply Now</a>
   </div>
 
 </div>

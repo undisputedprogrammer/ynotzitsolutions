@@ -102,7 +102,7 @@ $isblog=false;
                   </div>
 
                 <div class=" flex justify-center mt-4 md:mt-7 lg:mt-9">
-                    <button class=" bg-blue-600 text-white font-montsemibold text-base lg:text-lg px-3 py-2" type="submit" name="submit" >Apply for test</button>
+                    <button class=" text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150 font-montsemibold text-base lg:text-lg px-3 py-2" type="submit" name="submit" >Apply for test</button>
                 </div>
 
               </form>
