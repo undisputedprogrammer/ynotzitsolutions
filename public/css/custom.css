@@ -378,3 +378,8 @@ height: auto;
         transform: scale(1);
     }
 }
+
+
+.content{
+    transition: all 0.9s ease-in-out;
+}
