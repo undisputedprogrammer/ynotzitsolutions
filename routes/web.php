@@ -34,12 +34,20 @@ Route::get('/services', function () {
     return view('service');
 });
 
+Route::get('/careers', function(){
+    return view('careers');
+});
+
 Route::get('/about', function () {
     return view('about');
 });
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/test/apply', function(){
+    return view('apply');
 });
 
 

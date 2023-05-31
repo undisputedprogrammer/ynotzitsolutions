@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/aos.css')}}">
     <script src="{{asset('js/aos.js')}}"></script>
 
+
 </head>
 
 <body x-data="{show:false, toggle(){this.show=!this.show}}">
@@ -21,6 +22,7 @@
     <script>
   AOS.init();
 </script>
+
 </body>
 
 </html>
