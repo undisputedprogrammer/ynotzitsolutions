@@ -36,7 +36,8 @@ $isblog=false;
 
                 @csrf
 
-                <h1 class="block uppercase tracking-wide text-gray-700 text-center mb-4 md:mb-8 lg:mb-10 font-bold">Application for full stack web development training</h1>
+                <h1 class="block uppercase tracking-wide text-gray-700 text-center  font-bold">Application for full stack web development training</h1>
+                <h1 class="block uppercase tracking-wide text-gray-700 text-center mb-4 md:mb-8 lg:mb-10 font-bold">Apply for aptitude test</h1>
 
                   <div class="w-full px-3 mb-3 ">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
@@ -76,9 +77,14 @@ $isblog=false;
                     </label>
                     <div class="relative">
                       <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="education" name="qualification">
-                        <option value="UG">Under Graduate</option>
                         <option value="PG">Post Graduate</option>
+
+                        <option value="UG">Under Graduate</option>
+
                         <option value="DIP">Diploma</option>
+
+                        <option value="PLUSTWO">Plus Two</option>
+
                       </select>
                       <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
 

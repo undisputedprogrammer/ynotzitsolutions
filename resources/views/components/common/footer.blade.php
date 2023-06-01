@@ -5,30 +5,28 @@
       <div class="text-white flex pl-2 ml-2 md:pl-14 md:ml-8 pt-2 md:pt-8 lg:pt-12 justify-between lg:pr-24 lg:mr-24 md:pr-14 md:mr-14 lg:text-base text-[8px] md:text-xs font-light mr-3 pr-3">
         <div class=" flex flex-col">
             <a href="/" >Home</a>
-            <a href="/about" class="md:pt-6 pt-2 ">About</a>
+            <a href="/about" class="md:pt-6 pt-2 ">About us</a>
             <a href="/services" class="md:pt-6 pt-2">Services</a>
-            <a href="/blogs" class="md:pt-6 pt-2">Blog</a>
-            <a href="/contact" class="md:pt-6 pt-2">Contact</a>
+
         </div>
         <div class=" flex flex-col pl-6">
-            <a href="/services/webDevelopment">Web Development</a>
-            <a href="/services/mobileApp" class="md:pt-6 pt-2">Mobile Applications</a>
+            <a href="/careers" >Careers</a>
+            <a href="/contact" class="md:pt-6 pt-2">Contact</a>
+            <a href="/services/webDevelopment" class="md:pt-6 pt-2">Web Development</a>
+
+
+        </div>
+        <div class=" flex flex-col pl-6">
+            <a href="/services/softwaresolutions" >Software Solutions</a>
             <a href="/services/digitalMarketing" class="md:pt-6 pt-2">Digital Marketing</a>
             <a href="/services/SEO" class="md:pt-6 pt-2">Search Engine Optimisation</a>
-            <a href="/services/onlineAdvertisements" class="md:pt-6 pt-2">Online Advertisements</a>
+
+
+
         </div>
         <div class=" flex flex-col pl-6">
-            <a href="/services/socialMediaManagement">Social Media</a>
-            <a href="/services/branding" class="md:pt-6 pt-2">Branding</a>
-            <a href="/services/logoDesign" class="md:pt-6 pt-2">Logo design</a>
-            <a href="/services/buisinesCardDesign" class="md:pt-6 pt-2">Business card</a>
-            <a href="/services/stationaries" class="md:pt-6 pt-2">Stationeries</a>
-        </div>
-        <div class=" flex flex-col pl-6">
-            <a href="/services/catalogues">Catalogues</a>
-            <a href="/services/leaflets&brochures" class="md:pt-9 pt-3">Leaflets & Brochures</a>
-            <a href="/services/promoVideos" class="md:pt-9 pt-3">Promo Videos</a>
-            <a href="/services/customRequirements" class="md:pt-10 pt-4">Custom requirements</a>
+            <a href="/services/socialMediaManagement">Social Media Management</a>
+            <a href="/services/multimedia" class="md:pt-6 pt-2">Graphics / videos / photos</a>
         </div>
       </div>
       </div>
@@ -36,11 +34,11 @@
         <div>
         <h1 class="text-white md:text-xl lg:text-3xl font-light lg:pl-14 lg:ml-10 md:pl-8 pl-5 ml-2 md:ml-3 text-sm">Connect with Us</h1>
         <div class="flex lg:pl-[6.5rem] md:pl-[3rem] pl-[2rem] md:pt-0 lg:pt-2">
-        <a href=""><img src="{{asset('images/icons/fb-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a>
-        <a href=""><img src="{{asset('images/icons/instagram-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a>
-        <a href=""><img src="{{asset('images/icons/indeed-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a>
-        <a href=""><img src="{{asset('images/icons/mail-id-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a>
-        <a href=""><img src="{{asset('images/icons/phn-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a>
+        <a href="https://www.facebook.com/ynotzitsolutions"><img src="{{asset('images/icons/fb-2.webp')}}" alt="" class=" md:w-[26px] w-5 mx-1 aspect-square"></a>
+        <a href="https://instagram.com/ynotzit?igshid=MmJiY2I4NDBkZg=="><img src="{{asset('images/icons/insta-2.webp')}}" alt="" class=" md:w-7 w-5 mx-1 aspect-square"></a>
+        <a href="https://www.linkedin.com/company/ynotzitsolutions/"><img src="{{asset('images/icons/ln-2.webp')}}" alt="" class=" md:w-7 w-5 mx-1 aspect-square"></a>
+        {{-- <a href=""><img src="{{asset('images/icons/mail-id-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a> --}}
+        <a href="https://wa.me/9497344553?text=Hi,%20Let's%20schedule%20a%20meeting"><img src="{{asset('images/icons/wp-2.webp')}}" alt="" class=" md:w-[26px] w-5 mx-1 aspect-square"></a>
 
     </div>
     </div>

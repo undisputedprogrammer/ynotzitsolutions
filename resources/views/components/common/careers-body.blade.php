@@ -25,9 +25,9 @@
             <td class=" sm:text-center md:p-3">60,000/-</td>
         </tr>
         <tr class="font-montsemibold text-sm md:text-base border-b border-gray-500">
-            <td class="  pr-2 sm:text-center md:p-3">Net cost</td>
+            <td class="  pr-2  md:p-3">Net cost</td>
             <td></td>
-            <td class=" sm:text-center md:p-3">Rs 0/-</td>
+            <td class=" sm:text-center md:p-3">Rs. 0/-</td>
         </tr>
     </tbody>
     </table>
