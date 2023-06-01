@@ -36,7 +36,7 @@
     $targetbg="bg-recent-blogs";
 @endphp
 
-<x-common.recent-blogs :bg="$targetbg" :recents="$recents"></x-common.recent-blogs>
+{{-- <x-common.recent-blogs :bg="$targetbg" :recents="$recents"></x-common.recent-blogs> --}}
 
 <x-common.why-us></x-common.why-us>
 
