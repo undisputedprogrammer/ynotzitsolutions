@@ -34,11 +34,11 @@
         <div>
         <h1 class="text-white md:text-xl lg:text-3xl font-light lg:pl-14 lg:ml-10 md:pl-8 pl-5 ml-2 md:ml-3 text-sm">Connect with Us</h1>
         <div class="flex lg:pl-[6.5rem] md:pl-[3rem] pl-[2rem] md:pt-0 lg:pt-2">
-        <a href="https://www.facebook.com/ynotzitsolutions"><img src="{{asset('images/icons/fb-2.webp')}}" alt="" class=" md:w-[26px] w-5 mx-1 aspect-square"></a>
-        <a href="https://instagram.com/ynotzit?igshid=MmJiY2I4NDBkZg=="><img src="{{asset('images/icons/insta-2.webp')}}" alt="" class=" md:w-7 w-5 mx-1 aspect-square"></a>
-        <a href="https://www.linkedin.com/company/ynotzitsolutions/"><img src="{{asset('images/icons/ln-2.webp')}}" alt="" class=" md:w-7 w-5 mx-1 aspect-square"></a>
+        <a href="https://www.facebook.com/ynotzitsolutions"><img src="{{asset('images/icons/fb-2.webp')}}" alt="" class=" md:w-[26px] md:pt-[2px] w-5 mx-2 aspect-square"></a>
+        <a href="https://instagram.com/ynotzit?igshid=MmJiY2I4NDBkZg=="><img src="{{asset('images/icons/insta-2.webp')}}" alt="" class=" md:w-7 w-5 mx-2 aspect-square"></a>
+        <a href="https://www.linkedin.com/company/ynotzitsolutions/"><img src="{{asset('images/icons/ln-2.webp')}}" alt="" class=" md:w-7 w-5 mx-2 aspect-square"></a>
         {{-- <a href=""><img src="{{asset('images/icons/mail-id-01.webp')}}" alt="" class="lg:w-10 md:w-7 w-5"></a> --}}
-        <a href="https://wa.me/9497344553?text=Hi,%20Let's%20schedule%20a%20meeting"><img src="{{asset('images/icons/wp-2.webp')}}" alt="" class=" md:w-[26px] w-5 mx-1 aspect-square"></a>
+        <a href="https://wa.me/9497344553?text=Hi,%20Let's%20schedule%20a%20meeting"><img src="{{asset('images/icons/wp-2.webp')}}" alt="" class=" md:w-[26px] md:pt-[2px] w-5 mx-2 aspect-square"></a>
 
     </div>
     </div>
