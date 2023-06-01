@@ -11,7 +11,7 @@
     data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $isservices]) }} class=" " href="/services">Our Services</a>
 
     <a data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $isblog]) }} class=" " href="/blogs">Blog</a>
+    data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $isblog]) }} class=" " href="/careers">Careers</a>
 
     <a data-aos="fade-up"
     data-aos-anchor-placement="center-bottom" {{ $attributes->class([ 'text-blue' => $iscontact]) }} class=" " href="/contact">Contact Us</a>

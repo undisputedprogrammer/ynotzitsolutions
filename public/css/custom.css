@@ -67,6 +67,10 @@ height: auto;
     background-color: #F9F9F9;
   }
 
+  .active{
+    background-color: lightgray;
+  }
+
   .text-default{
     color: #282943;
   }

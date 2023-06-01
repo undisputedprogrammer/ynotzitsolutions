@@ -134,6 +134,7 @@
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
+        this.childNodes[1].classList.toggle('hover:bg-gray-100');
         this.childNodes[1].childNodes[3].classList.toggle('rotate-180')
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
