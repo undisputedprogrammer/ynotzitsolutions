@@ -1,7 +1,7 @@
 <div class="w-full relative">
 
-    <img class=" h-[160px] md:h-fit object-cover" src="{{asset('images/about/about2.webp')}}" alt="">
-    <div class=" absolute top-[42%] lg:top-[34%] xl:top-[35%] left-4 lg:left-7 w-full">
+    <img class=" h-[160px] md:h-fit w-full object-cover" src="{{asset('images/about/about2.webp')}}" alt="">
+    <div class=" absolute top-[42%] lg:top-[34%] xl:top-[35%] left-4 lg:left-7 ">
         <h2 class=" font-myriadpro bold text-3xl md:text-5xl  text-white w-full mt-0   lg:text-7xl xl:text-8xl">ABOUT US</h2>
         {{-- <p class=" font-myriadpro text-xs lg:text-base xl:text-lg text-white mt-2">Work is easy when you have all tools around you</p> --}}
 
