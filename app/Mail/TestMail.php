@@ -32,7 +32,7 @@ class TestMail extends Mailable
      * */
     public function build()
     {
-        return $this->from('contact@ynotzitsolutions.com','YNOTZ IT Solutions Private Limited')->subject($this->data['subject'])->view('emails.test')->with('data',$this->data);
+        return $this->from('contact@ynotzitsolutions.com','YNOTZ IT Solutions Private Limited')->subject($this->data['subject'])->view('emails.test-invitation')->with('data',$this->data);
     }
 
 

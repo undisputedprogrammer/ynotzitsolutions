@@ -47,7 +47,11 @@ class MailController extends Controller
             'course'=>$request['course'],
         ]);
 
-        $data=['subject'=>"You are requested to take the test"];
+        $data=['subject'=>"You are requested to take the test",
+                'name'=>$request['name'],
+                'email'=>$request['email'],
+                'phone'=>$request['phone'],
+            ];
 
         Mail::mailer('smtp2')->to($request['email'])->send(new TestMail($data));
 
