@@ -111,9 +111,11 @@
 </div>
     <div class="bg-black">
         <div class="icon-holder">
-            <img class="icon" src="{{asset('images/email/image-1.png')}}" alt="">
-            <img class="icon" src="{{asset('images/email/image-2.png')}}" alt="">
-            <img class="icon" src="{{asset('images/email/image-4.png')}}" alt="">
+            <a href="https://www.facebook.com/ynotzitsolutions"><img class="icon" src="{{asset('images/email/image-1.png')}}" alt=""></a>
+
+            <a href="https://www.linkedin.com/company/ynotzitsolutions/"><img class="icon" src="{{asset('images/email/image-2.png')}}" alt=""></a>
+
+            <a href="https://instagram.com/ynotzit?igshid=MmJiY2I4NDBkZg=="><img class="icon" src="{{asset('images/email/image-4.png')}}" alt=""></a>
         </div>
         <div class="address font">
             <p style="text-align: center;">YNOTZ IT Solutions, FS6, 6th Floor, Heavenly Plaza, Padamugal, Kakkanad, Kochi - 682021</p>
