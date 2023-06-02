@@ -1,10 +1,11 @@
 /.phpunit.cache
 /node_modules
 
-.env
+
 
 /vendor
 /resources/views/test.blade.php
+.env
 .env.backup
 .env.production
 .phpunit.result.cache
