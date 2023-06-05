@@ -79,7 +79,7 @@ $isblog=false;
                       <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="education" name="qualification">
                         <option value="PG">Post Graduate</option>
 
-                        <option value="UG">Under Graduate</option>
+                        <option value="UG">Graduate</option>
 
                         <option value="DIP">Diploma</option>
 
