@@ -55,6 +55,21 @@
         margin-right: auto;
     }
 
+    .button{
+        text-align: center;
+        width: fit-content;
+        padding: 6px;
+        background-color:black;
+        color:white;
+        text-decoration: none;
+        border-radius: 7px;
+    }
+
+    .body{
+        background-color: white;
+        color: black;
+    }
+
     @media(min-width:640px){
         .logo{
             height:60px;
@@ -76,7 +91,7 @@
     }
 
     </style>
-<body style="background-color:white; margin:0;">
+<body class="body" style="background-color:white; margin:0;">
     <div class="wrapper">
     <div class="mail-head">
         <img class="logo" style="margin-top: 20px; max-height: 75px;" src="{{asset('images/logo.png')}}" alt="">
@@ -89,7 +104,7 @@
 
         </p>
         <div style="display: flex; justify-content: center;">
-        <a style="text-align: center; width: fit-content; padding: 6px; background-color:black; color:white; text-decoration: none; border-radius: 7px;" class=" font" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">Click here to attempt aptitude test</a>
+        <a style="text-align: center; width: fit-content; padding: 6px; background-color:black; color:white; text-decoration: none; border-radius: 7px;" class=" font button" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">Click here to attempt aptitude test</a>
         </div>
 
         <p class=" paragraph font">If the above button doesn't work, copy and paste the below given link to your browser's address bar to go to the test page.</p>
