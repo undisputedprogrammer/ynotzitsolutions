@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Aptitude test invitation</title>
 </head>
 <style>
     .mail-head{
@@ -79,7 +79,7 @@
 <body style="background-color:white; margin:0;">
     <div class="wrapper">
     <div class="mail-head">
-        <img class="logo" style="margin-top:20px" src="{{asset('images/logo.png')}}" alt="">
+        <img class="logo" style="margin-top: 20px; max-height: 75px;" src="{{asset('images/logo.png')}}" alt="">
     </div>
     <div>
         <h4 class="heading font">Hi {{$data['name']}}</h4>
@@ -88,7 +88,13 @@
         <p class="paragraph font">Here is the link to the test:
 
         </p>
-        <a style="text-align: center" class=" font" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">Click here to attempt aptitude test</a>
+        <div style="display: flex; justify-content: center;">
+        <a style="text-align: center; width: fit-content; padding: 6px; background-color:black; color:white; text-decoration: none; border-radius: 7px;" class=" font" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">Click here to attempt aptitude test</a>
+        </div>
+
+        <p class=" paragraph font">If the above button doesn't work, copy and paste the below given link to your browser's address bar to go to the test page.</p>
+
+        <a style="text-align: center;" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">https://www.flexiquiz.com/SC/N/ynotz-it-aptitude</a>
 
         <p class="paragraph font">
             The last date for attempting the test is 10th June 2023.
@@ -110,12 +116,12 @@
     </div>
 </div>
     <div class="bg-black">
-        <div class="icon-holder">
-            <a href="https://www.facebook.com/ynotzitsolutions"><img class="icon" src="{{asset('images/email/image-1.png')}}" alt=""></a>
+        <div class="icon-holder" style="display: flex; justify-content: center;">
+            <a style="margin-right:5px; margin-left:5px;" href="https://www.facebook.com/ynotzitsolutions"><img class="icon" src="{{asset('images/email/image-1.png')}}" alt=""></a>
 
-            <a href="https://www.linkedin.com/company/ynotzitsolutions/"><img class="icon" src="{{asset('images/email/image-2.png')}}" alt=""></a>
+            <a style="margin-right:5px; margin-left:5px;" href="https://www.linkedin.com/company/ynotzitsolutions/"><img class="icon" src="{{asset('images/email/image-2.png')}}" alt=""></a>
 
-            <a href="https://instagram.com/ynotzit?igshid=MmJiY2I4NDBkZg=="><img class="icon" src="{{asset('images/email/image-4.png')}}" alt=""></a>
+            <a style="margin-right:5px; margin-left:5px;" href="https://instagram.com/ynotzit?igshid=MmJiY2I4NDBkZg=="><img class="icon" src="{{asset('images/email/image-4.png')}}" alt=""></a>
         </div>
         <div class="address font">
             <p style="text-align: center;">YNOTZ IT Solutions, FS6, 6th Floor, Heavenly Plaza, Padamugal, Kakkanad, Kochi - 682021</p>
