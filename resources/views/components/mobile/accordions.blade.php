@@ -51,10 +51,10 @@
       <div id="accordion-collapse-body-4" class="panel" aria-labelledby="accordion-collapse-heading-3">
         <div class="p-5 border-2 border-t-0 border-gray-400 ">
           <p class="mb-2 lg:mb-4 font-montmedium text-sm md:text-base xl:text-lg text-gray-600">This is absolutely real. We are a start-up private limited company and this is a part of our team building process.
-            Our objective is to recruit freshers, provide free training for them and develop them as our core team members.
+            Our objective is to recruit freshers, provide training for them and develop them as our core team members.
             </p>
           <p class="font-montmedium text-sm md:text-base xl:text-lg text-gray-600">ഇത് യാഥാർഥ്യമാണ്. ഞങ്ങളുടേത് ഒരു start up company ആണ്.  ഇത് ഞങ്ങളുടെ team building ന്റെ ഒരു ഭാഗമാണ്.
-            പഠനം കഴിഞ്ഞ് നിൽക്കുന്ന യുവതീയുവാക്കളെ തിരഞ്ഞെടുത്തത് ഞങ്ങൾക്ക് ആവശ്യമുള്ള രീതിയിൽ മികച്ച training നൽകി അവരെ ഞങ്ങളുടെ team ലേക്ക് എടുക്കുക എന്നതാണ് ഞങ്ങൾ ഉദ്ദേശിക്കുന്നത്.
+            പഠനം കഴിഞ്ഞ് നിൽക്കുന്ന യുവതീയുവാക്കളെ തിരഞ്ഞെടുത്തത് മികച്ച training നൽകി അവരെ ഞങ്ങളുടെ team ലേക്ക് എടുക്കുക എന്നതാണ് ഞങ്ങൾ ഉദ്ദേശിക്കുന്നത്.
             </p>
 
         </div>
