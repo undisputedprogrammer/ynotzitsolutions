@@ -2,7 +2,7 @@
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">1 Year Full Stack Web Development Training Program</h2>
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  lg:mt-2 md:text-center">With Assured Placement</h2>
 <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + 6 Months Internship With stipend</p>
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Only 6 Vacancies</p>
+<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month. Only 6 Vacancies</p>
 <div>
 
     <table class=" mt-4 md:mt-7 lg:mt-10 mb-2 table-auto mx-auto border-2 border-gray-500  sm:w-[90%] md:w-[80%] max-w-2xl">
@@ -15,12 +15,12 @@
         </thead>
         <tbody>
         <tr class="font-montmedium text-sm md:text-base  border-b border-gray-500">
-            <td class="  px-1  md:p-3">Fees for training (6 Months)</td>
+            <td class="  px-1  md:p-3">Fees for training (Months 1-6)</td>
             <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td>
             <td class=" sm:text-center md:p-3">60,000/-</td>
         </tr>
         <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
-            <td class="  px-1  md:p-3">Stipend for Internship (6 Months)</td>
+            <td class="  px-1  md:p-3">Stipend for Internship (Months 7-12)</td>
             <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td>
             <td class=" sm:text-center md:p-3">60,000/-</td>
         </tr>
