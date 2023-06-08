@@ -46,12 +46,12 @@
         </thead>
         <tbody>
         <tr class="font-montmedium text-sm md:text-base  border-b border-gray-500">
-            <td class="  px-1  md:p-3">Fees for training (Months 1-6)</td>
+            <td class="  px-1  md:p-3">Fees you pay for training (Months 1-6)</td>
             <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td>
             {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
         </tr>
         <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
-            <td class="  px-1  md:p-3">Stipend for Internship (Months 7-12)</td>
+            <td class="  px-1  md:p-3">Stipend you get for Internship (Months 7-12)</td>
             <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td>
             {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
         </tr>
