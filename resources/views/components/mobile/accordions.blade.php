@@ -105,11 +105,16 @@
       </h2>
       <div id="accordion-collapse-body-7" class="panel " aria-labelledby="accordion-collapse-heading-7">
         <div class="p-5 border-2 border-t-0 border-gray-400 ">
-          <p class="mb-2 lg:mb-4 font-montmedium text-sm md:text-base xl:text-lg text-gray-600">The selection is based on an online aptitude test and interview. Click button below to go the test page. The test is of just 20 minutes duration. Last date to attend the test is 12th of June. Shortlisted candidates will be intimated about further steps by phone and email.
+          <p class="mb-2 lg:mb-4 font-montmedium text-sm md:text-base xl:text-lg text-gray-600">The selection is based on an online aptitude test and interview. Click on the Apply now button to register for the online aptitude test. Once you provide the details in the given form, the link to the aptitude test will be mailed to you.
+            The test is of just 20 minutes duration. You can complete it any time before 10th of June. Shortlisted candidates will be intimated about further steps by phone and email.
+
 
 
             </p>
-          <p class="font-montmedium text-sm md:text-base xl:text-lg text-gray-600">Aptitude Test, Interview എന്നിവ അടിസ്ഥാനപ്പെടുത്തിയാണ് selection. Test page ലേക്ക് പോകുവാൻ താഴെ കൊടുത്തിരിക്കുന്ന button click ചെയ്യുക. Test 20 minute സമയത്തേക്ക് ഉള്ളതാണ്. ജൂൺ 12 ന് ഉള്ളിൽ എപ്പോൾ വേണമെങ്കിലും താങ്കൾക്ക് test ൽ പങ്കെടുക്കാവുന്നതാണ്. തിരഞ്ഞെടുക്കപ്പെടുന്നവർക്ക് തുടർവിവരങ്ങൾ email ലും phone ലും ലഭിക്കുന്നതാണ്.
+          <p class="font-montmedium text-sm md:text-base xl:text-lg text-gray-600">Aptitude Test, Interview എന്നിവ അടിസ്ഥാനപ്പെടുത്തിയാണ് selection.
+            താഴെ കൊടുത്തിരിക്കുന്ന Apply now ബട്ടണിൽ click ചെയ്ത്, തുടർന്നുള്ള form ൽ വിവരങ്ങൾ നൽകിയാൽ aptitude test ന്റെ link താങ്കൾക്ക് email ൽ ലഭിക്കും.
+            Test 20 minute സമയത്തേക്ക് ഉള്ളതാണ്. ജൂൺ 12 ന് ഉള്ളിൽ താങ്കൾക്ക് test എഴുതാവുന്നതാണ്.
+
 
 
             </p>
@@ -119,7 +124,7 @@
 
 
       <div class="flex justify-center w-full my-5 md:mt-2 lg:mt-6 ">
-        <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">Click here to attend Aptitude test</a>
+        <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150" href="/test/apply">Apply now</a>
   </div>
 
 </div>

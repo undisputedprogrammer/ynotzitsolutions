@@ -141,6 +141,24 @@ $isblog=false;
             let message=document.getElementById('education').value;
 
 
+            let aftersubmission = document.createElement("div");
+            aftersubmission.classList=['w-full sm:w-[80%] md:w-[70%] mx-auto ']
+
+            let afterheading= document.createElement("h3");
+            afterheading.classList=['uppercase tracking-wide text-gray-700 text-center  font-bold'];
+            afterheading.innerText="Great";
+            aftersubmission.appendChild(afterheading);
+            let afterpara=document.createElement("p");
+            afterpara.innerText="You have successfully registered for the test, a mail containing the test link will be sent to your provided email address. Or you can directly attend the aptitude test by clicking the link below.";
+            afterpara.classList=['text-sm md:text-base font-montregular mb-3']
+            aftersubmission.appendChild(afterpara);
+            let afterlink=document.createElement("a");
+            afterlink.href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude";
+            afterlink.innerText="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude";
+            afterlink.classList=['text-center text-blue-600']
+            aftersubmission.appendChild(afterlink);
+
+
             alert.classList.toggle('hidden');
 
 
@@ -186,6 +204,7 @@ $isblog=false;
                             }).then(function(response) {
 
                                     spinner.classList.toggle('hidden');
+                                    form.replaceWith(aftersubmission);
                                     alert.classList.toggle('hidden');
 
                                 })

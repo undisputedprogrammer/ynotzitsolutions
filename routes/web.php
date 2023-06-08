@@ -46,9 +46,9 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-// Route::get('/test/apply', function(){
-//     return view('apply');
-// });
+Route::get('/test/apply', function(){
+    return view('apply');
+});
 
 
 
