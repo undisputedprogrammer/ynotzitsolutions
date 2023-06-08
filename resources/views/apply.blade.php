@@ -150,7 +150,7 @@ $isblog=false;
             aftersubmission.appendChild(afterheading);
             let afterpara=document.createElement("p");
             afterpara.innerText="You have successfully registered for the test, a mail containing the test link will be sent to your provided email address. Or you can directly attend the aptitude test by clicking the link below.";
-            afterpara.classList=['text-sm md:text-base font-montregular mb-3']
+            afterpara.classList=['text-sm md:text-base font-montregular my-3']
             aftersubmission.appendChild(afterpara);
             let afterlink=document.createElement("a");
             afterlink.href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude";
