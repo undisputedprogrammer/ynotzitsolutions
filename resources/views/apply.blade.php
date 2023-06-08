@@ -26,12 +26,13 @@ $isblog=false;
 {{-- desktop-navbar ends --}}
 
 
-<section class="bg-gray-100">
+<section id="container" class="bg-gray-100">
     <div class="mx-auto max-w-screen-lg px-4 py-16 sm:px-6 lg:px-8">
       <div class="flex justify-center w-full">
 
 
         <div class="rounded-lg bg-white p-5 shadow-lg lg:col-span-3 lg:p-12 w-full">
+            <x-apply-success></x-apply-success>
             <form id="form" class="w-full sm:w-[80%] md:w-[70%] mx-auto " onsubmit="formSubmit();return false" method="post" enctype="multipart/form-data">
 
                 @csrf
@@ -145,8 +146,8 @@ $isblog=false;
             aftersubmission.classList=['w-full sm:w-[80%] md:w-[70%] mx-auto ']
 
             let afterheading= document.createElement("h3");
-            afterheading.classList=['uppercase tracking-wide text-gray-700 text-center  font-bold'];
-            afterheading.innerText="Great";
+            afterheading.classList=[' tracking-wide text-gray-700 text-center  font-bold'];
+            afterheading.innerText="Great!";
             aftersubmission.appendChild(afterheading);
             let afterpara=document.createElement("p");
             afterpara.innerText="You have successfully registered for the test, a mail containing the test link will be sent to your provided email address. Or you can directly attend the aptitude test by clicking the link below.";
@@ -204,8 +205,9 @@ $isblog=false;
                             }).then(function(response) {
 
                                     spinner.classList.toggle('hidden');
-                                    form.replaceWith(aftersubmission);
-                                    alert.classList.toggle('hidden');
+                                    form.classList.toggle('hidden');
+                                    window.scrollTo(0,0);
+                                    document.getElementById('apply-success').classList.toggle('hidden');
 
                                 })
                                 .catch(function(error) {
