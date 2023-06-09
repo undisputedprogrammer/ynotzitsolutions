@@ -2,7 +2,9 @@
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">Developer Mentoring Program</h2>
 {{-- <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  lg:mt-2 md:text-center">With Assured Placement</h2> --}}
 <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + Placement in our own team</p>
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month. Only 6 Vacancies</p>
+<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center"> Only 6 seats</p>
+
+<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month</p>
 
 
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 mb-2">What do you get ?</h2>
