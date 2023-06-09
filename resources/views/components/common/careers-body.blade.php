@@ -1,7 +1,7 @@
 <div class=" w-[94%] mx-auto mb-5 lg:mb-14">
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">Developer Mentoring Program</h2>
 {{-- <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  lg:mt-2 md:text-center">With Assured Placement</h2> --}}
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + 6 Months Internship With stipend + Placement in our own team</p>
+<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + Placement in our own team</p>
 <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month. Only 6 Vacancies</p>
 
 
@@ -30,29 +30,45 @@
     </li>
     <li>Version control, deployment with GIT</li>
     <li>Work on live projects</li>
+    <li>Placement in our own team</li>
 
 </ul>
 
 <div>
 
     <table class=" mt-4 md:mt-7 lg:mt-10 mb-2 table-auto mx-auto border-2 border-gray-500  sm:w-[90%] md:w-[80%] max-w-2xl">
-        <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 mb-2 text-center">Training fee and stipend</h2>
-        <thead>
+        <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 mb-2 text-center">Training fee</h2>
+        {{-- <thead>
         <tr class=" font-montsemibold text-base md:text-base lg:text-lg border-b-2 mx-2 border-gray-500">
             <th class="text-start  md:p-3">Particulars</th>
             <th class=" text-start sm:text-center md:p-3">Amount</th>
-            {{-- <th class=" text-start sm:text-center md:p-3">Total</th> --}}
+             <th class=" text-start sm:text-center md:p-3">Total</th>
         </tr>
-        </thead>
+        </thead>  --}}
         <tbody>
         <tr class="font-montmedium text-sm md:text-base  border-b border-gray-500">
-            <td class="  px-1  md:p-3">Fees you pay for training (Months 1-6)</td>
-            <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td>
+            <td class="  px-1  md:p-3">Training Fees	Rs. 50000/- + GST (Payable in 6 Monthly instalments)</td>
+
             {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
         </tr>
         <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
-            <td class="  px-1  md:p-3">Stipend you get for Internship (Months 7-12)</td>
-            <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td>
+            <td class="  px-1  md:p-3 font-semibold">Discounted Payment Options:
+            </td>
+            {{-- <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td> --}}
+            {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
+        </tr>
+        <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
+            <td class="  px-1  md:p-3 ">2 Instalments within 3 months: Rs. 42,000/- + GST
+
+            </td>
+            {{-- <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td> --}}
+            {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
+        </tr>
+        <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
+            <td class="  px-1  md:p-3 ">One Time Payment: Rs. 34000 + GST
+
+            </td>
+            {{-- <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td> --}}
             {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
         </tr>
         {{-- <tr class="font-montsemibold text-sm md:text-base border-b border-gray-500">
