@@ -30,9 +30,11 @@
     </li>
     <li>Version control, deployment with GIT</li>
     <li>Work on live projects</li>
-    <li>Placement in our own team</li>
+    <li class=" font-bold">Placement in our own team</li>
 
 </ul>
+
+
 
 <div>
 
@@ -79,7 +81,13 @@
     </tbody>
     </table>
 
-    <h3 class="text-center mb-4 md:mb-7 lg:mb-10 xl:text-lg font-montmedium">Placement in our own team after completion of internship.</h3>
+    <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 text-center">Placement</h2>
+
+    <h3 class="text-center mb-4   xl:text-xl font-montsemibold">Placement in our own team after completion of training <br> with minimum starting salary Rs.10,000/-</h3>
+
+    <div class="flex justify-center w-full my-3 md:mb-4 lg:mb-7 ">
+        <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150" href="/test/apply">Apply now</a>
+    </div>
     {{-- <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-4 xl:mt-9">Fees For Training: Rs. 60,000/- (To be paid as Rs. 10000 / Month)</p>
     <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1">Remuneration for internship: Rs. 10,000/- per month (Total Rs. 60,000 for 6 months)</p>
     <p class=" font-montsemibold text-sm md:text-base xl:text-lg mt-1">Net Cost: Rs. 0.00/-</p> --}}

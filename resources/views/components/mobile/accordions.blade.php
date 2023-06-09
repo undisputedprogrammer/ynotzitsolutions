@@ -8,7 +8,7 @@
       <div id="accordion-collapse-body-1"  class=" panel" aria-labelledby="accordion-collapse-heading-1">
         <div class="p-5 border-2 border-t-0 border-gray-400 ">
           <p class="mb-2 lg:mb-4 font-montmedium text-sm md:text-base xl:text-lg text-gray-600">Yes, placement is guaranteed. At the completion of 6 month training, you will be absorbed into our team as a Web Development Executive, subject to your good conduct and performance. Salary will be based on your performance during the training period.</p>
-          <p class="font-montmedium text-sm md:text-base xl:text-lg text-gray-600">തീർച്ചയായും. training & internship program സമയത്ത് താങ്കളുടെ പ്രകടനവും പ്രവർത്തന ശൈലിയും മോശമല്ലാത്തപക്ഷം, ഒരു വർഷത്തിന്റെ അവസാനം താങ്കളെ ഞങ്ങളുടെ തന്നെ development team ലേക്ക് ചേർക്കുന്നതായിരിക്കും.</p>
+          <p class="font-montmedium text-sm md:text-base xl:text-lg text-gray-600">തീർച്ചയായും. training സമയത്ത് താങ്കളുടെ പ്രകടനവും പ്രവർത്തന ശൈലിയും മോശമല്ലാത്തപക്ഷം, 6 മാസത്തെ training പൂർത്തിയാകുമ്പോൾ, താങ്കളെ ഞങ്ങളുടെ development team ലേക്ക് ചേർക്കുന്നതായിരിക്കും.</p>
         </div>
       </div>
 
