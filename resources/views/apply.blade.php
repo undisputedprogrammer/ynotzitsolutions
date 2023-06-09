@@ -208,6 +208,8 @@ $isblog=false;
                                     form.classList.toggle('hidden');
                                     window.scrollTo(0,0);
                                     document.getElementById('apply-success').classList.toggle('hidden');
+                                    fbq('track', 'CompleteRegistration');
+
 
                                 })
                                 .catch(function(error) {
