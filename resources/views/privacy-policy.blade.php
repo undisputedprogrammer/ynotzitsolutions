@@ -125,12 +125,12 @@ $isblog=false;
 
 
 
-        <h3 class="font-montmedium text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Updates to this policy</h3>
+        <h3 class="font-montmedium text-base md:text-lg xl:text-xl  mt-3 xl:mt-9">Updates to this policy</h3>
         <p class="font-montregular text-sm md:text-base xl:text-lg ">This Privacy Policy was last updated on 01.06.2023. From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
         </p>
 
 
-        <h3 class="font-montmedium text-lg md:text-xl xl:text-2xl  mt-3 xl:mt-9">Jurisdiction</h3>
+        <h3 class="font-montmedium text-base md:text-lg xl:text-xl  mt-3 xl:mt-9">Jurisdiction</h3>
         <p class="font-montregular text-sm md:text-base xl:text-lg ">If you choose to visit the website, your visit and any dispute over privacy is subject to this Policy and the website's terms of use. In addition to the foregoing, any disputes arising under this Policy shall be governed by the laws of India.
         </p>
 
