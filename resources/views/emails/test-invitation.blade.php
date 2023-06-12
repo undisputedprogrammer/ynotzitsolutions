@@ -112,7 +112,7 @@
         <a style="text-align: center;" href="https://www.flexiquiz.com/SC/N/ynotz-it-aptitude">https://www.flexiquiz.com/SC/N/ynotz-it-aptitude</a>
 
         <p class="paragraph font">
-            The last date for attempting the test is 10th June 2023.
+            The last date for attempting the test is 20th June 2023.
             </p>
             <br>
 

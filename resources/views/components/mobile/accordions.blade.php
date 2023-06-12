@@ -106,14 +106,14 @@
       <div id="accordion-collapse-body-7" class="panel " aria-labelledby="accordion-collapse-heading-7">
         <div class="p-5 border-2 border-t-0 border-gray-400 ">
           <p class="mb-2 lg:mb-4 font-montmedium text-sm md:text-base xl:text-lg text-gray-600">The selection is based on an online aptitude test and interview. Click on the Apply now button to register for the online aptitude test. Once you provide the details in the given form, the link to the aptitude test will be mailed to you.
-            The test is of just 20 minutes duration. You can complete it any time before 10th of June. Shortlisted candidates will be intimated about further steps by phone and email.
+            The test is of just 20 minutes duration. You can complete it any time before 20th of June. Shortlisted candidates will be intimated about further steps by phone and email.
 
 
 
             </p>
           <p class="font-montmedium text-sm md:text-base xl:text-lg text-gray-600">Aptitude Test, Interview എന്നിവ അടിസ്ഥാനപ്പെടുത്തിയാണ് selection.
             താഴെ കൊടുത്തിരിക്കുന്ന Apply now ബട്ടണിൽ click ചെയ്ത്, തുടർന്നുള്ള form ൽ വിവരങ്ങൾ നൽകിയാൽ aptitude test ന്റെ link താങ്കൾക്ക് email ൽ ലഭിക്കും.
-            Test 20 minute സമയത്തേക്ക് ഉള്ളതാണ്. ജൂൺ 12 ന് ഉള്ളിൽ താങ്കൾക്ക് test എഴുതാവുന്നതാണ്.
+            Test 20 minute സമയത്തേക്ക് ഉള്ളതാണ്. ജൂൺ 20 ന് ഉള്ളിൽ താങ്കൾക്ക് test എഴുതാവുന്നതാണ്.
 
 
 

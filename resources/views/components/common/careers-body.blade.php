@@ -1,10 +1,10 @@
 <div class=" w-[94%] mx-auto mb-5 lg:mb-14">
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">Developer Mentoring Program</h2>
 {{-- <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  lg:mt-2 md:text-center">With Assured Placement</h2> --}}
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + Placement in our own team</p>
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center"> Only 6 seats</p>
+<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + Assured Placement</p>
+{{-- <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center"> If you don't get placed, you get full course fee refund!</p> --}}
 
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month</p>
+{{-- <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month</p> --}}
 
 
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 mb-2">What do you get ?</h2>
@@ -56,25 +56,23 @@
             {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
         </tr>
         <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
-            <td class="  px-1  md:p-3 font-semibold">Discounted Payment Options:
+            <td class="  px-1  md:p-3 text-xs md:text-sm">(Discounted Payment Options Available)
             </td>
             {{-- <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td> --}}
             {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
         </tr>
-        <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
+        {{-- <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
             <td class="  px-1  md:p-3 ">2 Instalments within 3 months: Rs. 42,000/- + GST
 
             </td>
-            {{-- <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td> --}}
-            {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
-        </tr>
-        <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
+
+        </tr> --}}
+        {{-- <tr class="font-montmedium text-sm md:text-base border-b border-gray-500">
             <td class="  px-1  md:p-3 ">One Time Payment: Rs. 34000 + GST
 
             </td>
-            {{-- <td class="px-1 sm:text-center md:p-3">Rs 10,000/Month</td> --}}
-            {{-- <td class=" sm:text-center md:p-3">60,000/-</td> --}}
-        </tr>
+
+        </tr> --}}
         {{-- <tr class="font-montsemibold text-sm md:text-base border-b border-gray-500">
             <td class="  pr-2  md:p-3">Net cost</td>
             <td></td>
@@ -83,9 +81,11 @@
     </tbody>
     </table>
 
-    <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 text-center">Placement</h2>
+    {{-- <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-3xl  mt-3 lg:mt-7 xl:mt-9 text-center">Placement</h2> --}}
 
-    <h3 class="text-center mb-4   xl:text-xl font-montsemibold">Placement in our own team after completion of training <br> with minimum starting salary Rs.10,000/-</h3>
+    <h3 class="text-center mb-4   xl:text-xl font-montsemibold">Placement Guarantee: If you don't get placed, you get full course fee refund! </h3>
+
+    <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center text-red-600">Hurry Up, Admission Limited To Only 6 Candidates!</p>
 
     <div class="flex justify-center w-full my-3 md:mb-4 lg:mb-7 ">
         <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150" href="/test/apply">Apply now</a>
