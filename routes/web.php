@@ -50,6 +50,10 @@ Route::get('/test/apply', function(){
     return view('apply');
 });
 
+Route::get('/privacy-policy', function(){
+    return view('privacy-policy');
+});
+
 
 
 Route::get('/blogs', [BlogController::class, 'all']);

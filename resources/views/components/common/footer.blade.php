@@ -27,6 +27,7 @@
         <div class=" flex flex-col pl-6">
             <a href="/services/socialMediaManagement">Social Media Management</a>
             <a href="/services/multimedia" class="md:pt-6 pt-2">Graphics / videos / photos</a>
+            <a href="/privacy-policy" class="md:pt-6 pt-2">Privacy Policy</a>
         </div>
       </div>
       </div>
