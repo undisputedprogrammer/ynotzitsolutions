@@ -24,6 +24,7 @@
         <ul class=" list-disc w-[96%] mx-auto list-inside">
             <li>Laravel</li>
             <li>Node JS</li>
+            <li>React JS</li>
             <li>JQuery</li>
             <li>Tailwind CSS</li>
             <li>Alpine JS</li>
