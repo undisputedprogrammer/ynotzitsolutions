@@ -33,12 +33,21 @@ $isblog=false;
 
         <div class="rounded-lg bg-white p-5 shadow-lg lg:col-span-3 lg:p-12 w-full">
             <x-apply-success></x-apply-success>
+
+            <h1 class="block uppercase tracking-wide mb-2 lg:text-lg  text-center  font-bold text-blue-600">Application for Developer Mentoring Program</h1>
+            <h1 class="block  tracking-wide text-gray-700 text-center  font-semibold mb-4">Admission will be based on the results of an aptitude test.
+            </h1>
+
+            <h1 class="block  tracking-wide text-gray-700 text-center  font-bold mb-4">Submit the form below to register for the aptitude test.
+            </h1>
+
+
             <form id="form" class="w-full sm:w-[80%] md:w-[70%] mx-auto " onsubmit="formSubmit();return false" method="post" enctype="multipart/form-data">
 
                 @csrf
 
-                <h1 class="block uppercase tracking-wide text-gray-700 text-center  font-bold">Application for full stack web development training</h1>
-                <h1 class="block uppercase tracking-wide text-gray-700 text-center mb-4 md:mb-8 lg:mb-10 font-bold">Apply for aptitude test</h1>
+                {{-- <h1 class="block uppercase tracking-wide text-gray-700 text-center  font-bold">Application for full stack web development training</h1> --}}
+                {{-- <h1 class="block uppercase tracking-wide text-gray-700 text-center mb-4 md:mb-8 lg:mb-10 font-bold">Register for Aptitude test</h1> --}}
 
                   <div class="w-full px-3 mb-3 ">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
@@ -109,7 +118,7 @@ $isblog=false;
                   </div>
 
                 <div class=" flex justify-center mt-4 md:mt-7 lg:mt-9">
-                    <button class=" text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150 font-montsemibold text-base lg:text-lg px-3 py-2" type="submit" name="submit" >Apply for test</button>
+                    <button class=" text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150 font-montsemibold text-base lg:text-lg px-3 py-2" type="submit" name="submit" >Register</button>
                 </div>
 
               </form>
