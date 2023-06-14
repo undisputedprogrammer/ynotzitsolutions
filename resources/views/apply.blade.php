@@ -34,7 +34,7 @@ $isblog=false;
         <div class="rounded-lg bg-white p-5 shadow-lg lg:col-span-3 lg:p-12 w-full">
             <x-apply-success></x-apply-success>
 
-            <h1 class="block uppercase tracking-wide mb-2 lg:text-lg  text-center  font-bold text-blue-600">Application for Developer Mentoring Program</h1>
+            <h1 class="block uppercase tracking-wide mb-2 lg:text-lg  text-center  font-bold text-blue-600">Application for Developer Mentorship Program</h1>
             <h1 class="block  tracking-wide text-gray-700 text-center  font-semibold mb-4">Admission will be based on the results of an aptitude test.
             </h1>
 

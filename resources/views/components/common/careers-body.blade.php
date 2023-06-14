@@ -1,5 +1,5 @@
 <div class=" w-[94%] mx-auto mb-5 lg:mb-14">
-<h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">Developer Mentoring Program</h2>
+<h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">Developer Mentorship Program</h2>
 {{-- <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  lg:mt-2 md:text-center">With Assured Placement</h2> --}}
 <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training With Placement Assistance</p>
 {{-- <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center"> If you don't get placed, you get full course fee refund!</p> --}}
