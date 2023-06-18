@@ -1,7 +1,7 @@
 <div class=" w-[94%] mx-auto mb-5 lg:mb-14">
 <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  mt-3 xl:mt-9 md:text-center">Developer Mentorship Program</h2>
 {{-- <h2 class=" font-montsemibold text-lg md:text-2xl xl:text-4xl  lg:mt-2 md:text-center">With Assured Placement</h2> --}}
-<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training With Placement Assistance</p>
+<p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center">6 Months Training + 6 Months Internship With Stipend</p>
 {{-- <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-2 text-center"> If you don't get placed, you get full course fee refund!</p> --}}
 
 {{-- <p class=" font-montmedium text-sm md:text-base xl:text-lg mt-1 text-center">Start earning from 7th month</p> --}}
@@ -42,14 +42,43 @@
 
 
 <div class=" my-5">
-    <div class="w-fit mx-auto border-2 border-black p-4 ">
+    {{-- <div class="w-fit mx-auto border-2 border-black p-4 ">
         <div class=" flex space-x-3 "><h3 class=" font-montsemibold md:text-base lg:text-lg ">Training Fee: </h3><h3 class=" font-montmedium text-sm md:text-base lg:text-lg">Only Rs 5000/- per month</h3></div>
 
         <p class=" font-montmedium my-2 text-sm md:text-base lg:text-lg mt-1 text-center text-red-600">Admission Limited To Only 16 Candidates!</p>
 
         <div class=" flex space-x-3"><h3 class=" font-montsemibold md:text-base lg:text-lg">Placement: </h3><h3 class=" font-montmedium text-sm md:text-base lg:text-lg ">6 out of 16 trainees will be placed in our own team as Web Developers.<br> We will provide placement assistance for the remaining candidates.</h3></div>
-    </div>
-
+    </div> --}}
+    <table class="xl:max-w-2xl mx-auto text-left text-sm md:text-base xl:text-lg">
+        <thead class="border-b  dark:border-neutral-500 font-montsemibold">
+          <tr>
+            {{-- <th scope="col" class="px-6 py-4">#</th> --}}
+            <th scope="col" class="px-6 py-4">Particulars</th>
+            <th scope="col" class="px-6 py-4">Amount(Rs.)/Month</th>
+            <th scope="col" class="px-6 py-4">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b dark:border-neutral-500 font-montmedium">
+            {{-- <td class="whitespace-nowrap px-6 py-4 font-medium">1</td> --}}
+            <td class="whitespace-nowrap px-6 py-4">Fees for Training</td>
+            <td class="whitespace-nowrap px-6 py-4">Rs.10000/Month</td>
+            <td class="whitespace-nowrap px-6 py-4">60000/-</td>
+          </tr>
+          <tr class="border-b dark:border-neutral-500 font-montmedium">
+            {{-- <td class="whitespace-nowrap px-6 py-4 font-medium">2</td> --}}
+            <td class="whitespace-nowrap px-6 py-4">Stipend for Internship</td>
+            <td class="whitespace-nowrap px-6 py-4">Rs.10000/Month</td>
+            <td class="whitespace-nowrap px-6 py-4">60000/-</td>
+          </tr>
+          <tr class="border-b dark:border-neutral-500 font-montsemibold">
+            {{-- <td class="whitespace-nowrap px-6 py-4 font-medium"></td> --}}
+            <td class="whitespace-nowrap px-6 py-4 font-bold">Net Cost</td>
+            <td class="whitespace-nowrap px-6 py-4"></td>
+            <td class="whitespace-nowrap px-6 py-4 font-bold">0/-</td>
+          </tr>
+        </tbody>
+      </table>
 
 
 
@@ -69,6 +98,6 @@
 
 
 
-{{-- <x-mobile.accordions></x-mobile.accordions> --}}
+<x-mobile.accordions></x-mobile.accordions>
 
 </div>
