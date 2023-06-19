@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -53,6 +54,12 @@ Route::get('/test/apply', function(){
 Route::get('/privacy-policy', function(){
     return view('privacy-policy');
 });
+
+Route::get('/apply/complete', function(){
+    return view('thankyou');
+});
+
+Route::post('/careers/apply',[MailController::class, 'submit']);
 
 
 

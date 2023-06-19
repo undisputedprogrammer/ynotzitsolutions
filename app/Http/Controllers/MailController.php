@@ -57,5 +57,19 @@ class MailController extends Controller
 
         return response()->json(['Great! Check your inbox']);
     }
+
+
+    public function submit(Request $request){
+        Candidate::create([
+            'name'=>$request['name'],
+            'email'=>'nil',
+            'phone'=>$request['phone'],
+            'qualification'=>'nil',
+            'year_of_passing'=>'nil',
+            'course'=>'nil',
+        ]);
+
+        return redirect('/apply/complete');
+    }
 }
 

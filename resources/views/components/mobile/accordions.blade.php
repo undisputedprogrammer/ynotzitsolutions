@@ -1,4 +1,6 @@
 <div class=" mb-2 w-[96%] mx-auto">
+    <h1 class=" font-montsemibold text-lg lg:text-xl xl:text-2xl">Frequently Asked Questions</h1>
+
     <h2 id="accordion" class=" accordion">
         <button type="button" class="flex items-center justify-between w-full p-5  text-left text-gray-500 border-2 mt-2 lg:mt-4 border-gray-400 focus:ring-4 focus:ring-gray-200  hover:bg-gray-100 " data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
           <span class="font-montmedium text-sm md:text-base xl:text-lg text-black">Is placement provided at the completion of the 6 month training?<br>6 മാസം കഴിയുമ്പോൾ placement നൽകുമോ?</span>
@@ -123,9 +125,9 @@
       </div>
 
 
-      <div class="flex justify-center w-full my-5 md:mt-2 lg:mt-6 ">
+      {{-- <div class="flex justify-center w-full my-5 md:mt-2 lg:mt-6 ">
         <a class="px-2 py-1 md:py-2 md:px-3 font-montsemibold text-base lg:text-lg text-white rounded-xl bg-[#0D9CD4] hover:scale-105 transition-all ease-in-out duration-150" href="/test/apply">Apply now</a>
-  </div>
+  </div> --}}
 
 </div>
 
