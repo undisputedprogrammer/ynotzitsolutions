@@ -95,7 +95,7 @@
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
                     Name
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text" placeholder="" required>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  rounded py-3 px-4 mb-3 leading-tight  focus:bg-white " id="name" name="name" type="text" placeholder="" required>
 
 
 
@@ -105,7 +105,7 @@
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="phone">
                       Phone
                     </label>
-                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="phone" name="phone" type="phone" placeholder="" minlength="10" maxlength="10" required>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200  rounded py-3 px-4 mb-3 leading-tight  focus:bg-white focus:outline-blue-600" id="phone" name="phone" type="phone" placeholder="" minlength="10" maxlength="10" required>
 
 
                   </div>
