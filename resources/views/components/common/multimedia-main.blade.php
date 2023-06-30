@@ -107,9 +107,16 @@
 
 </div>
 
-<script>
-//     (function() {
-//     Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-//     Galleria.run('.galleria');
-// }());
-</script>
+<div id="modal" class="modal ">
+    {{-- <span id="close" class="close">&times;</span> --}}
+    <div class="  mt-10 sm:mt-0 relative">
+        <div class="flex justify-end">
+            <x-close></x-close>
+        </div>
+
+        <img class=" w-[80%] md:w-[50%] lg:w-[40%] xl:w-[30%] 2xl:w-[25%] mx-auto w3-animate-zoom" id="img01">
+    </div>
+
+</div>
+
+<script src="{{asset('js/gallery.js')}}"></script>
