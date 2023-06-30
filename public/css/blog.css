@@ -48,6 +48,16 @@
 
     }
 
+
+    li{
+        margin-top: 26px;
+    }
+
+    li>h2{
+        margin-top: 0px;
+        display: inline;
+    }
+
     p2{
         display: block;
         font-family: 'montserrat-light';

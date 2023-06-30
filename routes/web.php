@@ -25,7 +25,7 @@ Route::get('/blog/update/{id}',[BlogController::class, 'update'])->middleware('a
 
 Route::post('/blog/save/{id}',[BlogController::class, 'save'])->middleware('auth');
 
-Route::post('/blog/new/create',[BlogController::class,'index']);
+Route::post('/blog/new/create',[BlogController::class,'index'])->middleware('auth');
 
 Route::get('/displayblog/{id}',[BlogController::class, 'single']);
 
@@ -61,7 +61,9 @@ Route::get('/apply/complete', function(){
 
 Route::post('/careers/apply',[MailController::class, 'submit']);
 
-
+Route::get('/offers/super-startup-offer' , function(){
+    return view('startup-offer');
+});
 
 Route::get('/blogs', [BlogController::class, 'all']);
 

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon">
     <title>YNOTZ IT SOLUTIONS</title>
     {{-- <script src="{{asset('js/swiper.js')}}"></script> --}}
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
     <script src="{{asset('js/swiper.js')}}"></script>
+
     <link rel="stylesheet" href="{{asset('css/aos.css')}}">
     <script src="{{asset('js/aos.js')}}"></script>
 

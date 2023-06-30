@@ -17,6 +17,8 @@
     },
     "dependencies": {
         "aos": "^2.3.4",
-        "flowbite": "^1.6.5"
+        "flowbite": "^1.6.5",
+        "galleria": "^1.6.1",
+        "jquery": "^3.7.0"
     }
 }

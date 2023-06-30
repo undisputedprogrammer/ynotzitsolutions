@@ -41,7 +41,7 @@ It's important for businesses to carefully plan and strategize their mobile app 
 @endphp
 
 {{-- <img src="{{asset('images/services/multimedia croped.webp')}}" alt=""> --}}
-<x-herowithtext :hero="$hero" :height="$height"></x-herowithtext>
+{{-- <x-herowithtext :hero="$hero" :height="$height" ::class="{text-black}"></x-herowithtext> --}}
 
 {{-- <x-service-bodywithlist :data="$data" :listhead="$listhead" :lists="$lists" :img="$img"></x-service-bodywithlist> --}}
 
