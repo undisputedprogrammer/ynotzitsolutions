@@ -1,4 +1,5 @@
 @props(['blogs'])
+
 <div class="  mx-auto lg:flex mt-3">
     <div class="w-full">
         <div class="flex items-center space-x-4 w-[90%] mx-auto">
@@ -16,7 +17,7 @@
             @php
             $blog1 = array('img' => "/images/blog/HOW CAN REGISTER STARTUP-02.webp", 'date'=>"24 May 2023", 'title'=>"HOW CAN YOU REGISTER A START-UP COMPANY ?", 'desc'=>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus maiores explicabo nam quia eligendi minus iure reiciendis dignissimos sapiente!");
         @endphp
-        @if ($blogs)
+        @if (count($blogs)!=0)
 
 
         <div class=" md:flex md:flex-wrap">
@@ -31,7 +32,7 @@
         {{$blogs->links()}}
         </div>
         @else
-        <h1 class=" text-center text-xl font-montsemibold">Sorry! No blogs found </h1>
+        <h1 class=" text-center text-xl font-montsemibold">Sorry! Blogs will be uploaded soon.. </h1>
         @endif
 
 

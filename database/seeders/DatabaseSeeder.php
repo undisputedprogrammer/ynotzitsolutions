@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use Database\Seeders\PermissionSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +17,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(1)->create();
 
-        \App\Models\Blog::factory(3)->create();
+        // \App\Models\Blog::factory(3)->create();
+
+        $this->call([
+            PermissionSeeder::class,
+        ]);
 
         \App\Models\User::factory()->create([
             'name' => 'Ali',
@@ -24,35 +29,39 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
             'password' => Hash::make('itsali'), // password
             'remember_token' => Str::random(10),
-        ]);
+        ])->assignRole('employee');
+
         \App\Models\User::factory()->create([
             'name' => 'Anjitha',
             'email' => 'anjitha@ynotzitsolutions.com',
             'email_verified_at' => now(),
             'password' => Hash::make('itsanjitha'), // password
             'remember_token' => Str::random(10),
-        ]);
+        ])->assignRole('employee');
+
         \App\Models\User::factory()->create([
             'name' => 'Revathi',
             'email' => 'revathi@ynotzitsolutions.com',
             'email_verified_at' => now(),
             'password' => Hash::make('itsrevathi'), // password
             'remember_token' => Str::random(10),
-        ]);
+        ])->assignRole('employee');
+
         \App\Models\User::factory()->create([
             'name' => 'Akhila',
             'email' => 'akhila@ynotzitsolutions.com',
             'email_verified_at' => now(),
             'password' => Hash::make('itsakhila'), // password
             'remember_token' => Str::random(10),
-        ]);
+        ])->assignRole('employee');
+
         \App\Models\User::factory()->create([
             'name' => 'Sujitha',
             'email' => 'sujitha@ynotzitsolutions.com',
             'email_verified_at' => now(),
             'password' => Hash::make('itssujitha'), // password
             'remember_token' => Str::random(10),
-        ]);
+        ])->assignRole('employee');
 
         \App\Models\User::factory()->create([
             'name' => 'Midhun',
@@ -60,7 +69,7 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
             'password' => Hash::make('itsmidhun'), // password
             'remember_token' => Str::random(10),
-        ]);
+        ])->assignRole('admin');
 
     }
 }
