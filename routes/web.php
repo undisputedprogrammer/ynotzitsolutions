@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -96,10 +97,17 @@ Route::get('/services/multimedia', function(){
     return view('services.branding');
 });
 
+Route::get('/coupons/new',[OfferController::class, 'new']);
 
+Route::post('/coupons/create',[OfferController::class, 'create']);
 
+Route::get('/coupon/delete/{id}', [OfferController::class, 'destroy']);
 
+Route::post('/offer/booking', [OfferController::class, 'book']);
 
+Route::get('/booking/completed', function(){
+    return view('booking-completed');
+});
 
 
 

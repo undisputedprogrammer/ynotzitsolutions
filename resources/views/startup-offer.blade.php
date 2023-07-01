@@ -154,8 +154,18 @@ $isblog=false;
             <h3 class=" text-sm font-montsemibold my-2 md:text-base">Your Special discounted price is </h3>
 
             <h3 class=" font-montsemibold text-xl text-yellow-400 text-center md:text-2xl xl:my-5 2xl:text-2xl">₹9999/-</h3>
-            <div class="flex justify-center mt-3">
-                <a href="#" class=" bg-yellow-400 px-2 py-1.5 font-montsemibold rounded-full border-2 border-yellow-400 hover:bg-white focus:scale-105 ease-in-out duration-150">Book Now</a>
+
+            <div class="">
+                <form action="/offer/booking" method="POST" class="flex flex-col px-6 border-y-2 border-gray-400 py-6 space-y-4">
+                    @csrf
+                    <input class=" border-black rounded-md focus:placeholder-blue-600" type="text" name="name" placeholder="Your Name" required>
+                    <input class=" border-black rounded-md focus:placeholder-blue-600" type="text" name="company" placeholder="Company Name" required>
+                    <input class="py-2 px-3 border border-black focus:outline-2 outline-blue-600 focus:border-0 rounded-md focus:placeholder-blue-600" type="phone" name="phone" minlength="10" required placeholder="Phone Number">
+                    <div class="flex justify-center mt-3">
+                        <button type="submit" class=" bg-yellow-400 px-2 py-1.5 font-montsemibold rounded-full border-2 border-yellow-400 hover:bg-white focus:scale-105 ease-in-out duration-150">Book Now</button>
+                    </div>
+                </form>
+
             </div>
 
         </div>
@@ -167,14 +177,43 @@ $isblog=false;
 <x-common.footer></x-common.footer>
 
 <script>
+
+    let couponExist = false;
+
     document.getElementById('btn-apply').addEventListener('click',(e)=>{
-        e.target.disabled=true;
+
+     couponExist = false;
+
+    e.target.disabled=true;
+
         if(!document.getElementById('discount').classList.contains('hidden')){
                     document.getElementById('discount').classList.toggle('hidden');
         }
+
+        if(document.getElementById('inp-code').value==""){
+                if(!document.getElementById('discount').classList.contains('hidden')){
+                    document.getElementById('discount').classList.toggle('hidden');
+                }
+                document.getElementById('error-log').innerText="Coupon code cannot be empty";
+                e.target.disabled=false;
+                // document.getElementById('spin').classList.toggle('hidden');
+                return;
+            }
+
         document.getElementById('spin').classList.toggle('hidden');
-        setTimeout(() => {
-            if(document.getElementById('inp-code').value=='YNOTZIT' || document.getElementById('inp-code').value=='YNOTZCON'){
+
+        axios.get('/api/coupon', {
+            params: {
+            code: document.getElementById('inp-code').value,
+            }
+        })
+        .then(function (response) {
+
+            if(response.data == "coupon found"){
+                couponExist = true;
+            }
+
+            if(couponExist==true){
                 document.getElementById('error-log').innerText="";
                 document.getElementById('spin').classList.toggle('hidden');
                 if(document.getElementById('discount').classList.contains('hidden')){
@@ -182,14 +221,7 @@ $isblog=false;
                 }
                 e.target.disabled=false;
             }
-            else if(document.getElementById('inp-code').value==""){
-                if(!document.getElementById('discount').classList.contains('hidden')){
-                    document.getElementById('discount').classList.toggle('hidden');
-                }
-                document.getElementById('error-log').innerText="Coupon code cannot be empty";
-                e.target.disabled=false;
-                document.getElementById('spin').classList.toggle('hidden');
-            }
+
             else{
                 document.getElementById('spin').classList.toggle('hidden');
                 if(!document.getElementById('discount').classList.contains('hidden')){
@@ -198,7 +230,18 @@ $isblog=false;
                 document.getElementById('error-log').innerText="Invalid coupon code";
                 e.target.disabled=false;
             }
-        }, 1000);
+
+        })
+        .catch(function (error) {
+            couponExist = false;
+        });
+
+
+
+
+
+
+
 
     })
 </script>

@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Blog::factory(3)->create();
 
         \App\Models\User::factory()->create([
-            'name' => 'Muhammed Ali',
+            'name' => 'Ali',
             'email' => 'ali@ynotzitsolutions.com',
             'email_verified_at' => now(),
             'password' => Hash::make('itsali'), // password
@@ -37,6 +37,28 @@ class DatabaseSeeder extends Seeder
             'email' => 'revathi@ynotzitsolutions.com',
             'email_verified_at' => now(),
             'password' => Hash::make('itsrevathi'), // password
+            'remember_token' => Str::random(10),
+        ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Akhila',
+            'email' => 'akhila@ynotzitsolutions.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('itsakhila'), // password
+            'remember_token' => Str::random(10),
+        ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Sujitha',
+            'email' => 'sujitha@ynotzitsolutions.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('itssujitha'), // password
+            'remember_token' => Str::random(10),
+        ]);
+
+        \App\Models\User::factory()->create([
+            'name' => 'Midhun',
+            'email' => 'midhun@ynotzitsolutions.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('itsmidhun'), // password
             'remember_token' => Str::random(10),
         ]);
 

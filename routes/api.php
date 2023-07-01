@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\OfferController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/send',[MailController::class, 'send']);
 
 Route::post('/test/submit',[MailController::class, 'apply']);
+
+Route::get('/coupon',[OfferController::class, 'find']);
