@@ -36,8 +36,9 @@
     $targetbg="bg-recent-blogs";
 @endphp
 
-{{-- <x-common.recent-blogs :bg="$targetbg" :recents="$recents"></x-common.recent-blogs> --}}
-
+@if(count($recents)>2)
+<x-common.recent-blogs :bg="$targetbg" :recents="$recents"></x-common.recent-blogs>
+@endif
 <x-common.why-us></x-common.why-us>
 
 <x-lets-talk></x-lets-talk>
