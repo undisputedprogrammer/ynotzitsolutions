@@ -97,17 +97,21 @@ Route::get('/services/multimedia', function(){
     return view('services.branding');
 });
 
-Route::get('/coupons/new',[OfferController::class, 'new']);
+Route::get('/coupons/new',[OfferController::class, 'new'])->middleware('auth');
 
-Route::post('/coupons/create',[OfferController::class, 'create']);
+Route::post('/coupons/create',[OfferController::class, 'create'])->middleware('auth');
 
-Route::get('/coupon/delete/{id}', [OfferController::class, 'destroy']);
+Route::get('/coupon/delete/{id}', [OfferController::class, 'destroy'])->middleware('auth');
 
 Route::post('/offer/booking', [OfferController::class, 'book']);
 
 Route::get('/booking/completed', function(){
     return view('booking-completed');
 });
+
+Route::get('offers/bookings',[OfferController::class, 'bookings'])->middleware('auth');
+
+Route::get('/booking/delete/{id}', [OfferController::class, 'deleteBooking'])->middleware('auth');
 
 
 

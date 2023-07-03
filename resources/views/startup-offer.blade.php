@@ -153,7 +153,7 @@ $isblog=false;
 
             <h3 class=" text-sm font-montsemibold my-2 md:text-base">Your Special discounted price is </h3>
 
-            <h3 class=" font-montsemibold text-xl text-yellow-400 text-center md:text-2xl xl:my-5 2xl:text-2xl">₹9999/-</h3>
+            <h3 id="discounted-price" class=" font-montsemibold text-xl text-yellow-400 text-center md:text-2xl xl:my-5 2xl:text-2xl">₹9999/-</h3>
 
             <div class="">
                 <form action="/offer/booking" method="POST" class="flex flex-col px-6 border-y-2 border-gray-400 py-6 space-y-4">
@@ -161,6 +161,8 @@ $isblog=false;
                     <input class=" border-black rounded-md focus:placeholder-blue-600" type="text" name="name" placeholder="Your Name" required>
                     <input class=" border-black rounded-md focus:placeholder-blue-600" type="text" name="company" placeholder="Company Name" required>
                     <input class="py-2 px-3 border border-black focus:outline-2 outline-blue-600 focus:border-0 rounded-md focus:placeholder-blue-600" type="phone" name="phone" minlength="10" required placeholder="Phone Number">
+                    <input type="text" id="coupon" name="coupon" class="hidden">
+                    <input type="text" name="price" id="price" class=" hidden">
                     <div class="flex justify-center mt-3">
                         <button type="submit" class=" bg-yellow-400 px-2 py-1.5 font-montsemibold rounded-full border-2 border-yellow-400 hover:bg-white focus:scale-105 ease-in-out duration-150">Book Now</button>
                     </div>
@@ -208,14 +210,18 @@ $isblog=false;
             }
         })
         .then(function (response) {
-
-            if(response.data == "coupon found"){
+            let res = response.data;
+            console.log(res);
+            if(response.data.message == "Coupon found"){
                 couponExist = true;
             }
 
             if(couponExist==true){
+                document.getElementById('discounted-price').innerText='₹'+res.price+'/-';
                 document.getElementById('error-log').innerText="";
                 document.getElementById('spin').classList.toggle('hidden');
+                document.getElementById('coupon').value = res.code;
+                document.getElementById('price').value = res.price;
                 if(document.getElementById('discount').classList.contains('hidden')){
                     document.getElementById('discount').classList.toggle('hidden');
                 }

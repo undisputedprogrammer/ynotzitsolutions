@@ -26,9 +26,11 @@ $isblog=false;
 
 <div class="w-full mt-14 flex flex-col md:flex-row justify-evenly ">
 
-    <form action="/coupons/create" method="POST" class="flex flex-col items-center space-y-4">
+    <form action="/coupons/create" method="POST" class=" border-dashed border-2 rounded-md p-3 w-[20%] flex flex-col items-center space-y-4">
         @csrf
-        <input type="text" name="code" required placeholder="Enter new coupon code" class=" border-b-2 border-gray-600">
+        <input type="text" name="code" required placeholder="Enter new coupon code" class=" border-b-2 border-gray-600 w-full">
+
+        <input type="number" name="price" required placeholder="Enter the discounted price here" class=" border-b-2 border-gray-600 w-full">
 
         <button type="submit" class="px-2 py-1 bg-black text-white font-montsemibold text-sm rounded-md">Add</button>
 
@@ -43,6 +45,7 @@ $isblog=false;
                   <tr>
                     <th scope="col" class="px-6 py-4">#</th>
                     <th scope="col" class="px-6 py-4">Coupon Code</th>
+                    <th scope="col" class="px-6 py-4">Discounted price</th>
                     <th scope="col" class="px-6 py-4">Action</th>
 
                   </tr>
@@ -59,6 +62,7 @@ $isblog=false;
                         <tr class="border-b dark:border-neutral-500">
                             <td class="whitespace-nowrap px-6 py-4 font-medium">{{$no}}</td>
                             <td class="whitespace-nowrap px-6 py-4">{{$coupon['code']}}</td>
+                            <td class="whitespace-nowrap px-6 py-4">{{$coupon['price']}}</td>
                             <td class="whitespace-nowrap px-6 py-4"><a href="/coupon/delete/{{$coupon['id']}}"><img class="w-5" src="{{asset('images/icons/delete-icon.svg')}}" alt=""></a></td>
 
                         </tr>

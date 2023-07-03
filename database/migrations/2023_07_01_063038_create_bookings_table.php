@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('company');
             $table->string('phone');
+            $table->string('coupon');
+            $table->string('price');
             $table->timestamps();
         });
     }
