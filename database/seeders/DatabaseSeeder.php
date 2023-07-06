@@ -73,3 +73,5 @@ class DatabaseSeeder extends Seeder
 
     }
 }
+
+// insert into offers values('1','Super Startup Offer','ynotzitsolutions.com/offers/super-startup_offer','41000','19999','40',now(),now());

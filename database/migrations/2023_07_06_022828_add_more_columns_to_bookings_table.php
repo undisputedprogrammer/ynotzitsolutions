@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bookings', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('company');
-            $table->string('phone');
-            $table->string('coupon');
-            $table->string('price');
-            $table->timestamps();
+        Schema::table('bookings', function (Blueprint $table) {
+            $table->foreignId('reffered_by')->references('user_id')->on('users');
         });
     }
 
@@ -27,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bookings');
+        Schema::table('bookings', function (Blueprint $table) {
+            //
+        });
     }
 };

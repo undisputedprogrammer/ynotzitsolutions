@@ -1,10 +1,15 @@
 <?php
 
+use App\Http\Controllers\AdministrationController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\MarketerController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
+use App\Models\Marketer;
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Expr\FuncCall;
 
 /*
 |--------------------------------------------------------------------------
@@ -109,14 +114,57 @@ Route::get('/booking/completed', function(){
     return view('booking-completed');
 });
 
-Route::get('offers/bookings',[OfferController::class, 'bookings'])->middleware('auth');
+Route::get('/offers/bookings',[OfferController::class, 'bookings'])->middleware('auth');
 
 Route::get('/booking/delete/{id}', [OfferController::class, 'deleteBooking'])->middleware('auth');
 
 
+// admin route group
+
+Route::prefix('admin')->group(function(){
+    Route::get('/index', function(){
+        return view('admin.admin-index');
+    });
+
+    Route::get('/approve-marketers', [AdministrationController::class, 'approveIndex']);
+
+    Route::get('/marketer/approve', [AdministrationController::class, 'approve']);
+});
 
 
 
+Route::get('/marketer/register', function(){
+    return view('marketer.register');
+});
+
+Route::post('/marketer/registration/submit',[UserController::class, 'register']);
+
+Route::get('/marketer/registration/complete',function(){
+    return view('marketer.registration-complete');
+});
+
+Route::prefix('marketer')->middleware('marketer')->group( function(){
+
+    Route::get('/home', [MarketerController::class, 'home']);
+
+    Route::get('/manage-coupons', [MarketerController::class, 'manageCoupons']);
+
+    Route::get('/refferals',[MarketerController::class,'refferals']);
+
+    Route::post('/coupon/create',[MarketerController::class, 'createCoupon']);
+
+    Route::get('/change-password',[MarketerController::class, 'changePassword']);
+
+    Route::post('/password/store',[MarketerController::class, 'storePassword']);
+
+    Route::get('/logout',[MarketerController::class, 'destroy']);
+});
+
+Route::get('/marketer/login', function(){
+    return view('marketer.login');
+})->name('marketer-login');
+
+Route::post('/marketer/authenticate', [MarketerController::class, 'authenticate']);
 
 
 // Route::get('/test', function(){

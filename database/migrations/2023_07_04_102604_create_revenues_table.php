@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('coupons', function (Blueprint $table) {
+        Schema::create('revenues', function (Blueprint $table) {
             $table->id();
-            $table->string('code');
-            $table->string('price');
-            // $table->foreignId('user_id')->references('id')->on('users');
+            $table->foreignId('marketer_id')->references('id')->on('marketers');
+            $table->integer('total_referrals');
+            $table->float('all_time_income');
+            $table->float('current_balance');
+            $table->float('total_withdrawals');
             $table->timestamps();
         });
     }
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('coupons');
+        Schema::dropIfExists('revenues');
     }
 };

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Booking;
 use App\Models\Coupon;
+use App\Models\Offer;
 use Illuminate\Http\Request;
 use PHPUnit\Framework\Constraint\Count;
 
@@ -20,6 +21,7 @@ class OfferController extends Controller
         Coupon::create([
             'code'=>$request['code'],
             'price'=>$request['price'],
+            'user_id'=>$request->user()->id,
         ]);
 
         return redirect('/coupons/new');
@@ -35,7 +37,7 @@ class OfferController extends Controller
 
     public function find(Request $request){
         $coupon= Coupon::where('code',$request['code'])->get()->first();
-
+        $offer = Offer::where('short_code','SSO')->get()->first();
         if($coupon==null){
             $c = [
                 'message'=>"Coupon not found",
@@ -46,7 +48,7 @@ class OfferController extends Controller
             $c = [
                 'message'=>"Coupon found",
                 'code' => $coupon['code'],
-                'price' => $coupon['price'],
+                'price' => $offer['discount'],
             ];
             return response()->json($c);
         }
@@ -56,13 +58,16 @@ class OfferController extends Controller
     }
 
     public function book(Request $request){
+        $coupon = Coupon::where('code',$request['coupon'])->get()->first();
         $booking = Booking::create([
 
             'name'=>$request['name'],
             'company'=>$request['company'],
             'phone'=>$request['phone'],
-            'coupon'=>$request['coupon'],
+            'coupon_id'=>$coupon['id'],
             'price' => $request['price'],
+            'status'=>'booked',
+            'reffered_by'=>$coupon['user_id']
         ]);
 
         return redirect('/booking/completed');
