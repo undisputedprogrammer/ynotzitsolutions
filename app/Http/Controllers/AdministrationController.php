@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Monolog\Registry;
-use App\Mail\ApprovalMail;
 use App\Models\Marketer;
+use App\Mail\ApprovalMail;
 use App\Models\Registration;
-use App\Services\AdminServices;
 use Illuminate\Http\Request;
+use App\Services\AdminServices;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redis;
 
 class AdministrationController extends Controller
 {
@@ -20,13 +23,28 @@ class AdministrationController extends Controller
         $this->adminService = $service;
     }
 
+    public function index(Request $request){
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
+        return view('admin.admin-index');
+    }
+
     public function approveIndex(){
+
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
         $registrations = Registration::all();
 
         return view('admin.admin-approveMarketers', compact('registrations'));
     }
 
     public function approve(Request $request){
+
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
         // dd($request['rid']);
 
 
@@ -67,6 +85,17 @@ class AdministrationController extends Controller
         Mail::mailer('smtp2')->to($marketer['email'])->send(new ApprovalMail($data));
 
         return redirect('/admin/index');
+    }
+
+    public function logout(Request $request){
+
+        Auth::guard('web')->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/login');
     }
 }
 

@@ -118,13 +118,11 @@ Route::get('/offers/bookings',[OfferController::class, 'bookings'])->middleware(
 
 Route::get('/booking/delete/{id}', [OfferController::class, 'deleteBooking'])->middleware('auth');
 
-
+Route::get('/logout',[AdministrationController::class, 'logout']);
 // admin route group
 
-Route::prefix('admin')->group(function(){
-    Route::get('/index', function(){
-        return view('admin.admin-index');
-    });
+Route::prefix('admin')->middleware('auth')->group(function(){
+    Route::get('/index', [AdministrationController::class, 'index']);
 
     Route::get('/approve-marketers', [AdministrationController::class, 'approveIndex']);
 

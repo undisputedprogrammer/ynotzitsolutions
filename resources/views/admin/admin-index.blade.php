@@ -6,9 +6,13 @@
     <x-admin.admin-bars :active="$active"></x-admin.admin-bars>
         <!-- ./Sidebar -->
 
-        <div class="h-full ml-14 mt-14 mb-10 md:ml-64 bg-[#1976BC] rounded-tl-md">
+        <div class="h-full ml-14 mt-14 mb-10 md:ml-64  rounded-tl-md">
+
+            <h2 class="text-lg md:text-xl lg:text-2xl text-center font-montsemibold">Welcome admin! Your dashboard is under development</h2>
 
           <!-- Statistics Cards -->
+
+          <!--
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
             <div class="bg-blue-500 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
               <div class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
@@ -47,11 +51,11 @@
               </div>
             </div>
           </div>
-          <!-- ./Statistics Cards -->
+
 
           <div class="grid grid-cols-1 lg:grid-cols-2 p-4 gap-4">
 
-            <!-- Social Traffic -->
+
             <div class="relative flex flex-col min-w-0 mb-4 lg:mb-0 break-words bg-gray-50 dark:bg-gray-800 w-full shadow-lg rounded">
               <div class="rounded-t mb-0 px-0 border-0">
                 <div class="flex flex-wrap items-center px-4 py-2">
@@ -147,9 +151,7 @@
                 </div>
               </div>
             </div>
-            <!-- ./Social Traffic -->
 
-            <!-- Recent Activities -->
             <div class="relative flex flex-col min-w-0 break-words bg-gray-50 dark:bg-gray-800 w-full shadow-lg rounded">
               <div class="rounded-t mb-0 px-0 border-0">
                 <div class="flex flex-wrap items-center px-4 py-2">
@@ -225,10 +227,10 @@
                 </div>
               </div>
             </div>
-            <!-- ./Recent Activities -->
+
           </div>
 
-          <!-- Task Summaries -->
+
           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-4 gap-4 text-black dark:text-white">
             <div class="md:col-span-2 xl:col-span-3">
               <h3 class="text-lg font-semibold">Task summaries of recent sprints</h3>
@@ -323,9 +325,9 @@
               </div>
             </div>
           </div>
-          <!-- ./Task Summaries -->
 
-          <!-- Client Table -->
+
+
           <div class="mt-4 mx-4">
             <div class="w-full overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
@@ -440,7 +442,7 @@
               <div class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                 <span class="flex items-center col-span-3"> Showing 21-30 of 100 </span>
                 <span class="col-span-2"></span>
-                <!-- Pagination -->
+
                 <span class="flex col-span-4 mt-2 sm:mt-auto sm:justify-end">
                   <nav aria-label="Table navigation">
                     <ul class="inline-flex items-center">
@@ -485,9 +487,7 @@
               </div>
             </div>
           </div>
-          <!-- ./Client Table -->
 
-          <!-- Contact Form -->
           <div class="mt-8 mx-4">
             <div class="grid grid-cols-1 md:grid-cols-2">
               <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
@@ -536,9 +536,7 @@
               </form>
             </div>
           </div>
-          <!-- ./Contact Form -->
 
-          <!-- External resources -->
           <div class="mt-8 mx-4">
             <div class="p-4 bg-blue-50 dark:bg-gray-800 dark:text-gray-50 border border-blue-500 dark:border-gray-500 rounded-lg shadow-md">
               <h4 class="text-lg font-semibold">Have taken ideas & reused components from the following resources:</h4>
@@ -582,9 +580,11 @@
               </ul>
             </div>
           </div>
-          <!-- ./External resources -->
+
         </div>
       </div>
+
+    -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
