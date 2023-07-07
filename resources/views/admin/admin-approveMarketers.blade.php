@@ -8,8 +8,9 @@
         <x-admin.admin-bars :active="$active"></x-admin.admin-bars>
             <!-- ./Sidebar -->
 
-            <div class="h-full ml-14 mt-14 mb-10 md:ml-64  rounded-tl-md bg-gray-100 min-h-screen">
+            <div class="h-full ml-14 mt-14 py-8 mb-10 md:ml-64  rounded-tl-md bg-gray-100 min-h-screen">
 
+                <x-admin.admin-alert></x-admin.admin-alert>
                 <div class="flex flex-col w-[90%] mx-auto my-5">
                     <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                       <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
@@ -31,7 +32,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                                @if ($registrations)
+                                @if (count($registrations)>0)
                                 @php
                                     $no = 0;
                                 @endphp
@@ -54,10 +55,19 @@
                                         <td class="whitespace-nowrap px-6 py-4">{{$registration['place']}}</td>
                                         <td class="whitespace-nowrap px-6 py-4">{{$registration['gender']}}</td>
                                         <td class="whitespace-nowrap px-6 py-4">{{$registration['age']}}</td>
-                                        <td class="whitespace-nowrap px-6 py-4 flex space-x-2"><a href="/admin/marketer/approve?rid={{$registration['id']}}"><img class="w-5" src="{{asset('images/icons/user-plus.svg')}}" alt=""></a> <a href="/booking/delete/100"><img class="w-5" src="{{asset('images/icons/user-minus.svg')}}" alt=""></a></td>
+                                        <td class="whitespace-nowrap px-6 py-4 flex space-x-5">
+
+                                        <a href="/admin/marketer/approve?rid={{$registration['id']}}"><img class="w-5" src="{{asset('images/icons/user-plus.svg')}}" alt=""></a>
+
+                                        <a href="/admin/marketer/reject?rid={{$registration['id']}}"><img class="w-5" src="{{asset('images/icons/user-minus.svg')}}" alt=""></a></td>
 
                                     </tr>
                                     @endforeach
+
+                                    @else
+                                    <tr>
+                                        <td colspan="9" class=" py-3 font-montregular text-center">No fresh registrations to show</td>
+                                    </tr>
                                 @endif
 
 

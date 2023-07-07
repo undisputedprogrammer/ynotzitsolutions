@@ -7,6 +7,7 @@
             <a href="/" >Home</a>
             <a href="/about" class="md:pt-6 pt-2 ">About us</a>
             <a href="/services" class="md:pt-6 pt-2">Services</a>
+            <a href="/affiliate/home" class="md:pt-6 pt-2">Affiliate login</a>
 
         </div>
         <div class=" flex flex-col pl-6">

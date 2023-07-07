@@ -21,6 +21,6 @@ class UserController extends Controller
             'age'=>$request['age'],
         ]);
 
-        return redirect('/marketer/registration/complete');
+        return redirect('/affiliate/registration/complete');
     }
 }

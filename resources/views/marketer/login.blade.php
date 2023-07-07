@@ -15,7 +15,7 @@
                         <h1 class="text-2xl font-semibold">Hello! Login to continue</h1>
                     </div>
                     <div class="divide-y divide-gray-200">
-                        <form action="/marketer/authenticate" method="POST" enctype="multipart/form-data" class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                        <form action="/affiliate/authenticate" method="POST" enctype="multipart/form-data" class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                                 @csrf
                                 <div class="relative">
                                 <div class="relative z-0">
@@ -31,7 +31,7 @@
                                     <label for="password" class=" font-satoshimedium absolute text-base text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
 
                                     @if ($errors->any())
-                                        <p class="text-sm font-satoshimedium text-red-600">{{$errors->first('password')}}</p>
+                                        <p class="text-xs mt-1.5 font-montmedium text-red-600">{{$errors->first('password')}}</p>
                                     @endif
                                 </div>
                             </div>

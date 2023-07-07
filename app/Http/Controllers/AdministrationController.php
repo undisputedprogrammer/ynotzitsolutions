@@ -6,6 +6,8 @@ use App\Models\User;
 use Monolog\Registry;
 use App\Models\Marketer;
 use App\Mail\ApprovalMail;
+use App\Models\Booking;
+use App\Models\Coupon;
 use App\Models\Registration;
 use Illuminate\Http\Request;
 use App\Services\AdminServices;
@@ -79,12 +81,12 @@ class AdministrationController extends Controller
             'subject'=>'Welcome Affiliate Marketer',
             'name' => $marketer['name'],
             'email' => $marketer['email'],
-            'username' => $cred['username'],
+
             'password' => $cred['password']
         ];
         Mail::mailer('smtp2')->to($marketer['email'])->send(new ApprovalMail($data));
 
-        return redirect('/admin/index');
+        return back()->with(['message'=>'Affiliate approved']);
     }
 
     public function logout(Request $request){
@@ -96,6 +98,71 @@ class AdministrationController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/login');
+    }
+
+    public function addCoupon(Request $request){
+        $coupons = Coupon::where('user_id','!=',null)->with('user')->get();
+        return view('admin.admin-manage-coupon', compact('coupons'));
+    }
+
+    public function createCoupon(Request $request){
+        $request->validate([
+            'code'=>['required','min:6']
+        ]);
+        $code = strtoupper($request['code']);
+        $c = Coupon::where('code',$code)->get()->first();
+        $usercoupons = Coupon::where('user_id',$request->user()->id)->get();
+        if($c!=null){
+            return back()->withInput()->withErrors(['code'=>"Coupon already exists"])->onlyInput('code');
+        }
+        elseif(count($usercoupons)>7){
+            return back()->withErrors(['code'=>"You have already reached your Coupon limit"])->onlyInput('code');
+        }
+        else{
+            // $offer = Offer::find($request['offer']);
+
+            $coupon = Coupon::create([
+
+                'code'=>$code,
+                // 'price'=>$offer['discount'],
+                'user_id'=>$request->user()->id,
+                // 'offer_id'=>$request['offer']
+            ]);
+
+            return redirect('/admin/manage-coupons')->with('message','Coupon created succesfully');
+        }
+    }
+
+    public function bookings(){
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
+        $bookings = Booking::where('id','>',0)->with('reffered')->with('coupon')->get();
+        return view('admin.manage-bookings', compact('bookings'));
+    }
+
+
+    public function updateStatus(Request $request){
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
+        $booking = Booking::find($request['bid']);
+        $booking['status']=$request['status'];
+        $booking->save();
+
+        return redirect('/admin/manage-bookings')->with(['message'=>'Booking status updated']);
+    }
+
+    public function reject(Request $request){
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
+
+        $registration = Registration::find($request['rid']);
+
+        $registration->delete();
+
+        return back()->with(['warning'=>'Registration deleted']);
     }
 }
 

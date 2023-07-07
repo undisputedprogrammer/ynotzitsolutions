@@ -21,11 +21,11 @@ class MarketerController extends Controller
     public function home(Request $request){
         // dd($request->user());
         $coupons = Coupon::where('user_id', $request->user()->id)->get();
-        $marketer = Marketer::where('user_id',$request->user()->id)->get()->first();
+        // $marketer = Marketer::where('user_id',$request->user()->id)->get()->first();
         $offers = Offer::all();
         $refferals = Booking::where('reffered_by',$request->user()->id)->get();
-        $refferalsClosed = Booking::where('reffered_by',$request->user()->id)->where('status','closed')->get();
-        return view('marketer.dashboard', compact('coupons','marketer','offers','refferals','refferalsClosed'));
+        $refferalsClosed = Booking::where('reffered_by',$request->user()->id)->where('status','payed')->get();
+        return view('marketer.dashboard', compact('coupons','offers','refferals','refferalsClosed'));
     }
 
     public function createCoupon(Request $request){
@@ -42,7 +42,7 @@ class MarketerController extends Controller
             return back()->withErrors(['submit'=>"You have already reached your Coupon limit"])->onlyInput('submit');
         }
         else{
-            $offer = Offer::find($request['offer']);
+            // $offer = Offer::find($request['offer']);
 
             $coupon = Coupon::create([
 
@@ -52,17 +52,35 @@ class MarketerController extends Controller
                 // 'offer_id'=>$request['offer']
             ]);
 
-            return redirect('/marketer/home')->with('message','Coupon created succesfully');
+            return redirect('/affiliate/manage-coupons')->with('message','Coupon created succesfully');
         }
     }
 
     public function authenticate(LoginRequest $request){
 
-        $request->authenticate();
+        // $flag = $request->authenticate();
 
-        $request->session()->regenerate();
+        // $request->session()->regenerate();
 
-        return redirect()->intended('/marketer/home');
+        // dd($flag);
+
+        $formfields=$request->validate([
+            'email'=>['required','email'],
+            'password'=>'required']);
+
+        if(auth()->attempt($formfields)){
+
+            $request->session()->regenerate();
+
+
+            return redirect()->intended('/affiliate/home');
+        }
+
+        else{
+            return back()->withErrors(['password'=>'Invalid Credentials'])->onlyInput('password');
+        }
+
+
     }
 
     public function changePassword(Request $request){
@@ -116,7 +134,7 @@ class MarketerController extends Controller
                      ])->save();
 
         if($status){
-            return redirect('/marketer/home')->with('message','Password changed successfully');
+            return redirect('/affiliate/home')->with('message','Password changed successfully');
         }
         else{
             return back()->withErrors(['password'=>'Sorry, could not change password']);
@@ -130,17 +148,14 @@ class MarketerController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/marketer/login');
+        return redirect('/affiliate/login');
     }
 
     public function refferals(Request $request){
         $coupons = Coupon::where('user_id',$request->user()->id)->with('bookings')->withCount(['bookings'=> function (Builder $query) {
-            $query->where('status', 'closed');
+            $query->where('status', 'payed');
         }])->get();
-        // $bookings=[];
-        // foreach ($coupons as $coupon) {
 
-        // }
         return view('marketer.refferals', compact('coupons'));
     }
 

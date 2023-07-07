@@ -6,8 +6,8 @@
 
 <div class="min-h-screen bg-gray-100 py-7 sm:p-12">
   <div class="mx-auto w-[94%] max-w-md px-6 py-12 bg-white border-0 shadow-lg rounded-3xl">
-    <h1 class=" text-xl sm:text-2xl font-bold mb-8">Register as marketing partner</h1>
-    <form id="form" action="/marketer/registration/submit" method="POST">
+    <h1 class=" text-xl sm:text-2xl font-bold mb-8">Register as affiliate marketer</h1>
+    <form id="form" action="/affiliate/registration/submit" method="POST">
       @csrf
         <div class="relative z-0">
             <input type="text" id="name" name="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none   focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
@@ -28,7 +28,7 @@
 
 
       <fieldset class=" z-0 w-full p-px mt-5">
-        <legend class=" text-gray-700 font-montmedium text-sm transform  -top-3 origin-0">Are you an influencer</legend>
+        <legend class=" text-gray-700 font-montmedium text-sm transform  -top-3 origin-0">Are you a social media influencer</legend>
         <div class="block pt-3 pb-2 space-x-4">
           <label>
             <input

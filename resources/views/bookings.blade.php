@@ -37,7 +37,7 @@ $isblog=false;
                 <th scope="col" class="px-6 py-4">Name</th>
                 <th scope="col" class="px-6 py-4">Company</th>
                 <th scope="col" class="px-6 py-4">Mobile</th>
-                <th scope="col" class="px-6 py-4">Coupon used</th>
+                {{-- <th scope="col" class="px-6 py-4">Coupon used</th> --}}
                 <th scope="col" class="px-6 py-4">Discounted Price</th>
                 <th scope="col" class="px-6 py-4">Action</th>
 
@@ -58,7 +58,7 @@ $isblog=false;
                         <td class="whitespace-nowrap px-6 py-4">{{$booking['name']}}</td>
                         <td class="whitespace-nowrap px-6 py-4">{{$booking['company']}}</td>
                         <td class="whitespace-nowrap px-6 py-4">{{$booking['phone']}}</td>
-                        <td class="whitespace-nowrap px-6 py-4">{{$booking['coupon']}}</td>
+                        {{-- <td class="whitespace-nowrap px-6 py-4">{{$booking['coupon']}}</td> --}}
                         <td class="whitespace-nowrap px-6 py-4">{{$booking['price']}}/-</td>
                         <td class="whitespace-nowrap px-6 py-4"><a href="/booking/delete/{{$booking['id']}}"><img class="w-5" src="{{asset('images/icons/delete-icon.svg')}}" alt=""></a></td>
 

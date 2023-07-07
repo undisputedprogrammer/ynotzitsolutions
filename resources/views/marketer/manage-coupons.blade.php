@@ -6,14 +6,49 @@
     @endphp
     <x-marketer.marketer-bars :active="$active"></x-marketer.marketer-bars>
 
+
+
+
     <div class=" mt-20 lg:mt-24 xl:ml-60">
+
+        @if (session('message'))
+
+
+
+        <div role="alert" class="w-[90%] mx-auto lg:w-[80%] mb-5">
+            <div class="bg-green-400 text-white font-bold rounded-t px-4 py-2">
+              Success
+            </div>
+            <div class="border border-t-0 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
+              <p>{{session('message')}}</p>
+            </div>
+          </div>
+
+        @endif
+
         <h1 class=" text-stone-600 text-center font-montsemibold text-lg md:text-xl xl:text-2xl">Manage Coupons</h1>
 
-        <div class="md:flex md:justify-center md:space-x-7 md:py-7">
+        {{-- notice --}}
+
+        <div class=" w-[92%] max-w-2xl mx-auto flex items-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50 mt-5 md:mt-9 dark:text-blue-400 dark:border-blue-800" role="alert">
+            <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+            </svg>
+            <span class="sr-only">Info</span>
+            <div class=" font-montregular">
+              <span class="font-montsemibold">Notice ! </span> You can create maximum of only 8 coupons. Coupons once created cannot be edited or deleted.
+            </div>
+
+            {{-- notice ends --}}
+
+
+          </div>
+
+        <div class="md:flex md:justify-center md:space-x-7 md:py-7 md:max-w-2xl mx-auto">
 
         <div class="w-[90%] max-w-sm mx-auto md:mx-0 my-5 h-fit md:my-0 border-2 rounded-lg border-gray-500 border-dashed py-5">
             <h3 class=" text-lg font-montsemibold text-center">Create new coupon</h3>
-            <form action="/marketer/coupon/create" method="POST" class=" mt-4">
+            <form action="/affiliate/coupon/create" method="POST" class=" mt-4">
                 @csrf
 
                 <div class="w-[90%] mx-auto flex flex-col space-y-4">

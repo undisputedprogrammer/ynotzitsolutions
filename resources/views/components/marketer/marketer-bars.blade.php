@@ -64,7 +64,7 @@
                             @endphp
                         @endif
                         <a @class(['flex items-center rounded py-3 pl-3 pr-4 ', 'bg-ynotz hover:bg-[#1976bc] text-white' => $d, 'hover:bg-blue-100'=> !$d])
-                            href="/marketer/home">
+                            href="/affiliate/home">
                             <span class="select-none">Dashboard</span>
                         </a>
                     </li>
@@ -75,7 +75,7 @@
                             @endphp
                         @endif
                         <a @class(['flex items-center rounded py-3 pl-3 pr-4 ', 'bg-ynotz hover:bg-[#1976bc] text-white' => $c, 'hover:bg-blue-100'=> !$c])
-                            href="/marketer/manage-coupons">
+                            href="/affiliate/manage-coupons">
                             <span class="select-none">My Coupons</span>
                         </a>
                     </li>
@@ -87,7 +87,7 @@
                             @endphp
                         @endif
                         <a @class(['flex items-center rounded py-3 pl-3 pr-4 ', 'bg-ynotz hover:bg-[#1976bc] text-white' => $r, 'hover:bg-blue-100'=> !$r])
-                            href="/marketer/refferals">
+                            href="/affiliate/refferals">
                             <span class="select-none">Referrals</span>
                         </a>
                     </li>
@@ -110,13 +110,13 @@
                             @endphp
                         @endif
                         <a @class(['flex items-center rounded py-3 pl-3 pr-4 ', 'bg-ynotz hover:bg-[#1976bc] text-white' => $cp, 'hover:bg-blue-100'=> !$cp])
-                            href="/marketer/change-password">
+                            href="/affiliate/change-password">
                             <span class="select-none">Change password</span>
                         </a>
                     </li>
                     <li>
                         <a class="flex items-center text-red-600 rounded py-3 pl-3 pr-4  hover:bg-red-100"
-                            href="/marketer/logout">
+                            href="/affiliate/logout">
                             <span class="select-none">Logout</span>
                         </a>
                     </li>

@@ -102,11 +102,11 @@ Route::get('/services/multimedia', function(){
     return view('services.branding');
 });
 
-Route::get('/coupons/new',[OfferController::class, 'new'])->middleware('auth');
+// Route::get('/coupons/new',[OfferController::class, 'new'])->middleware('auth');
 
-Route::post('/coupons/create',[OfferController::class, 'create'])->middleware('auth');
+// Route::post('/coupons/create',[OfferController::class, 'create'])->middleware('auth');
 
-Route::get('/coupon/delete/{id}', [OfferController::class, 'destroy'])->middleware('auth');
+
 
 Route::post('/offer/booking', [OfferController::class, 'book']);
 
@@ -114,34 +114,49 @@ Route::get('/booking/completed', function(){
     return view('booking-completed');
 });
 
-Route::get('/offers/bookings',[OfferController::class, 'bookings'])->middleware('auth');
+// Route::get('/offers/bookings',[OfferController::class, 'bookings'])->middleware('auth');
 
-Route::get('/booking/delete/{id}', [OfferController::class, 'deleteBooking'])->middleware('auth');
 
 Route::get('/logout',[AdministrationController::class, 'logout']);
 // admin route group
 
 Route::prefix('admin')->middleware('auth')->group(function(){
+    Route::get('/manage-coupons',[AdministrationController::class, 'addCoupon']);
+
+    Route::post('/create-coupon',[AdministrationController::class, 'createCoupon']);
+
+    Route::get('/coupon/delete/{id}', [OfferController::class, 'destroy']);
+
     Route::get('/index', [AdministrationController::class, 'index']);
 
     Route::get('/approve-marketers', [AdministrationController::class, 'approveIndex']);
 
     Route::get('/marketer/approve', [AdministrationController::class, 'approve']);
+
+    Route::get('/marketer/reject', [AdministrationController::class, 'reject']);
+
+
+
+    Route::get('/manage-bookings',[AdministrationController::class, 'bookings']);
+
+    Route::get('/booking/delete/{id}', [OfferController::class, 'deleteBooking']);
+
+    Route::get('/change-status/{bid?}',[AdministrationController::class, 'updateStatus']);
 });
 
 
 
-Route::get('/marketer/register', function(){
+Route::get('/affiliate/register', function(){
     return view('marketer.register');
 });
 
-Route::post('/marketer/registration/submit',[UserController::class, 'register']);
+Route::post('/affiliate/registration/submit',[UserController::class, 'register']);
 
-Route::get('/marketer/registration/complete',function(){
+Route::get('/affiliate/registration/complete',function(){
     return view('marketer.registration-complete');
 });
 
-Route::prefix('marketer')->middleware('marketer')->group( function(){
+Route::prefix('affiliate')->middleware('marketer')->group( function(){
 
     Route::get('/home', [MarketerController::class, 'home']);
 
@@ -162,7 +177,13 @@ Route::get('/marketer/login', function(){
     return view('marketer.login');
 })->name('marketer-login');
 
+Route::get('/affiliate/login', function(){
+    return view('marketer.login');
+})->name('marketer-login');
+
 Route::post('/marketer/authenticate', [MarketerController::class, 'authenticate']);
+
+Route::post('/affiliate/authenticate', [MarketerController::class, 'authenticate']);
 
 
 // Route::get('/test', function(){

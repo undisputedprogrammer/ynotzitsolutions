@@ -8,11 +8,11 @@ class AdminServices{
 
     public function generateCredentials($name){
 
-        $nameArray = explode(" ", $name);
+        // $nameArray = explode(" ", $name);
 
-        $firstname=$nameArray[0];
+        // $firstname=$nameArray[0];
 
-        $username = $firstname.strval(rand(1000, 9999));
+        // $username = $firstname.strval(rand(1000, 9999));
 
         $alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","%","&","@","#","$","+","1","2","3","4","5","6","7","8","9"];
 
@@ -23,7 +23,7 @@ class AdminServices{
             $password = $password.$alpha[$key];
         }
 
-        $cred = ['username'=>$username,
+        $cred = [
         'password'=>$password];
         // dd($password);
         return $cred;
@@ -31,7 +31,7 @@ class AdminServices{
 
     public function createUser($registration , $cred){
         $user = User::create([
-            'name'=>$cred['username'],
+            'name'=>$registration['name'],
             'email'=>$registration['email'],
             'password'=>Hash::make($cred['password'])
         ]);

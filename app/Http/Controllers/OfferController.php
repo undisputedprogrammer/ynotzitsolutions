@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Booking;
-use App\Models\Coupon;
 use App\Models\Offer;
+use App\Models\Coupon;
+use App\Models\Booking;
 use Illuminate\Http\Request;
-use PHPUnit\Framework\Constraint\Count;
+use Illuminate\Support\Facades\Gate;
 
+use PHPUnit\Framework\Constraint\Count;
 use function PHPUnit\Framework\returnSelf;
 
 class OfferController extends Controller
@@ -28,10 +29,15 @@ class OfferController extends Controller
     }
 
     public function destroy($id){
+
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
+
         $coupon = Coupon::find($id);
 
         $coupon->delete();
-        return redirect('/coupons/new');
+        return redirect('/admin/manage-coupons')->with(['warning'=>'Coupon deleted']);
 
     }
 
@@ -67,7 +73,8 @@ class OfferController extends Controller
             'coupon_id'=>$coupon['id'],
             'price' => $request['price'],
             'status'=>'booked',
-            'reffered_by'=>$coupon['user_id']
+            'reffered_by'=>$coupon['user_id'],
+            'offer'=>'SSO'
         ]);
 
         return redirect('/booking/completed');
@@ -80,8 +87,11 @@ class OfferController extends Controller
     }
 
     public function deleteBooking($id){
+        if (! Gate::allows('is-admin')) {
+            abort(403);
+        }
         $booking = Booking::find($id);
         $booking->delete();
-        return redirect('/offers/bookings');
+        return redirect('/admin/manage-bookings')->with(['message'=>'Booking deleted succesfully']);
     }
 }

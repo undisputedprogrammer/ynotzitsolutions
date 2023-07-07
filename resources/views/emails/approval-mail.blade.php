@@ -8,10 +8,31 @@
 </head>
 <body>
     <h4>Hi {{$data['name']}}</h1>
-    <p>This mail is to notify that you have been approved as a marketing affiliate for our Super Startup Offer. The credentials of your new account is given below.</p>
+
+    <p>Welcome to Team YNOTZ IT Solutions. We are happy to have you along with us in our journey!
+    </p>
+
+    <p>
+        We have created an affiliate account for you at https://ynotzitsolutions.com. Here are the credentials to login to your account:
+
+    </p>
+
     <p>Email ID : {{$data['email']}}</p>
     <p>Password : {{$data['password']}}</p>
-    <p>You can login using the link given below, use your registered Email ID and above given password to login</p>
-    <a href="https://www.ynotzitsolutions.com/marketer/login">Click here to login</a>
+
+    <a href="https://www.ynotzitsolutions.com/affiliate/login">Click here to login</a>
+
+
+    <p>Once you log in, you may create COUPON CODES of your choice and distribute it among your audience. You can also track various details as the different promo offers available, status of of your coupon codes, leads and conversions generated, eligible commissions etc. in your dashboard.
+    </p>
+
+    <p>Please feel free to reach out to us for any clarification or guidance.
+    </p>
+
+    <p>Looking forward to a fruitful association,</p>
+    <p>Best regards :-)</p>
+
+    <p>Team YNOTZ IT Solutions</p>
+
 </body>
 </html>

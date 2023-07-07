@@ -24,19 +24,17 @@ $isblog=false;
 <x-desktop.nav :ishome="$ishome" :isabout="$isabout" :isservices="$isservices" :iscontact="$iscontact"  :isblog="$isblog" class="font-satoshimedium text-[14px] mr-14"></x-desktop.nav>
 {{-- desktop-navbar ends --}}
 
-<div class="w-full mt-14 flex flex-col md:flex-row justify-evenly ">
+<div class="w-full py-14 flex flex-col md:flex-row justify-evenly bg-gray-100">
 
-    <form action="/coupons/create" method="POST" class=" border-dashed border-2 rounded-md p-3 w-[20%] flex flex-col items-center space-y-4">
+    <form action="/coupons/create" method="POST" class=" bg-white shadow-sm rounded-2xl px-3 pb-4 w-[20%] flex flex-col items-center space-y-4 h-fit">
         @csrf
-        <input type="text" name="code" required placeholder="Enter new coupon code" class=" border-b-2 border-gray-600 w-full">
-
-        <input type="number" name="price" required placeholder="Enter the discounted price here" class=" border-b-2 border-gray-600 w-full">
-
-        <button type="submit" class="px-2 py-1 bg-black text-white font-montsemibold text-sm rounded-md">Add</button>
+        <h1 class="font-montsemibold text-lg">Create new coupon</h1>
+        <input type="text" name="code" class=" bg-gray-50 rounded-xl w-[90%] border-gray-600" placeholder="New coupon code">
+        <button type="submit" class="px-2 py-2 bg-black text-white font-montsemibold text-sm rounded-xl w-[90%]">Add</button>
 
     </form>
 
-    <div class="flex flex-col">
+    <div class="flex flex-col bg-white p-3 rounded-2xl shadow-sm">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="overflow-hidden">

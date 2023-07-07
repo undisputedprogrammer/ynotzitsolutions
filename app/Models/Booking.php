@@ -10,9 +10,13 @@ class Booking extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name','company','phone','coupon_id','price','status','reffered_by'];
+    protected $fillable = ['name','company','phone','coupon_id','price','status','reffered_by','offer'];
 
     public function coupon(){
-        return $this->hasOne(Coupon::class);
+        return $this->belongsTo(Coupon::class);
+    }
+
+    public function reffered(){
+        return $this->belongsTo(User::class,'reffered_by','id');
     }
 }
